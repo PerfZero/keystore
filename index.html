@@ -651,9 +651,9 @@
 
     <section class="popular-section">
       <div class="container">
-        <div class="popular-header">
-          <h2 class="popular-title">Популярное</h2>
-          <div class="popular-count">5</div>
+        <div class="popular-header section-header">
+          <h2 class="popular-title section-title">Популярное</h2>
+          <div class="popular-count section-count">5</div>
         </div>
         <div class="popular-swiper swiper">
           <div class="swiper-wrapper">
@@ -729,9 +729,9 @@
 
     <section class="games-section">
       <div class="container">
-        <div class="games-header">
-          <h2 class="games-title">Игры</h2>
-          <div class="games-count">999+</div>
+        <div class="games-header section-header">
+                      <h2 class="games-title section-title">Игры</h2>
+            <div class="games-count section-count">999+</div>
         </div>
         
         <div class="games-nav">
@@ -943,6 +943,132 @@
       </div>
     </section>
 
+    <section class="genres-section">
+      <div class="container">
+        <div class="genres-header section-header">
+                      <h2 class="genres-title section-title">Популярные жанры</h2>
+            <div class="genres-count section-count">24</div>
+        </div>
+          <div class="wrapper">
+            
+         
+        <div class="genres-grid">
+          <div class="genre-card">
+            <div class="genre-icon">
+             <img src="/assets/images/icon_1.svg" alt="">
+            </div>
+            <h3 class="genre-name">Экшен</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Шутер</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">RPG</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Стратегия</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Симулятор</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Хоррор</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Приключения</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Спорт</h3>
+          </div>
+        </div>
+        
+        <div class="genres-cta">
+          <div class="genres-cta-content">
+            <h3 class="genres-cta-title">Еще больше жанров в каталоге</h3>
+            <button class="genres-cta-btn">
+              <span>Перейти</span>
+             
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <div class="features-wrapper">
+          
+     
+        <div class="features-header">
+          <h2 class="features-title">Играйте без ограничений!</h2>
+        </div>
+        <p class="features-description">Покупайте игры и подписки на любые платформы по низким ценам и пополняйте баланс выгодно на KeysStore!</p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_1.svg" alt="">
+            </div>
+            <h3 class="feature-title">Оперативная поддержка</h3>
+            <p class="feature-description">В случае возникновения проблем поможем решить возникшую проблему максимально оперативно</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_2.svg" alt="">  
+            </div>
+            <h3 class="feature-title">Удобная оплата и вывод</h3>
+            <p class="feature-description">Принимаем карты большинства банков, СБП, а также криптовалюты</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_3.svg" alt="">
+            </div>
+            <h3 class="feature-title">8 лет на рынке</h3>
+            <p class="feature-description">Создано геймерами для геймеров</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
     <div class="currency-modal" id="currencyModal">
       <div class="currency-modal-content">
         <div class="currency-modal-header">
@@ -1038,45 +1164,7 @@
                 >
                   <g clip-path="url(#clip0_5009_17700)">
                     <path
-                      d="M9.5224 8.52571V8.52368C9.43693 8.52975 8.99569 8.55604 8.01382 8.55604C7.22872 8.55604 6.67816 8.53379 6.48338 8.52368V8.52571C3.46423 8.39021 1.21229 7.8563 1.21229 7.21521C1.21229 6.57614 3.46622 6.04021 6.48338 5.90471V7.99382C6.68015 8.00798 7.24661 8.04236 8.02773 8.04236C8.96587 8.04236 9.43495 8.00191 9.5224 7.99382V5.90673C12.5356 6.04425 14.7816 6.57816 14.7816 7.21723C14.7816 7.8563 12.5336 8.39021 9.5224 8.52773M9.5224 5.69034V3.82166H13.7262V0.972137H2.28161V3.82166H6.48536V5.69034C3.0687 5.8501 0.500732 6.53771 0.500732 7.36284C0.500732 8.18797 3.07068 8.87558 6.48536 9.03737V15.0276H9.52439V9.03737C12.9351 8.8776 15.4991 8.18999 15.4991 7.36486C15.4991 6.54176 12.9351 5.85213 9.52439 5.69236"
-                      fill="white"
-                    />
-                    <path
-                      d="M10.7148 11.6244L10.7185 12.9409L11.8695 13.5991V14.3698L10.0448 13.3298V11.2395L10.7148 11.6244ZM10.7148 10.308V11.0751L10.0444 10.6898V9.92263L10.7148 9.53727L11.3884 9.92263L10.7148 10.308ZM12.3503 9.92263L13.0206 9.53727L13.6943 9.92263L13.0206 10.308L12.3503 9.92263Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M11.1992 12.668V11.8973L11.8695 12.2827V13.0498L11.1992 12.668ZM12.3503 13.8752L13.0206 14.2605L13.6943 13.8752V14.6423L13.0206 15.0277L12.3503 14.6423V13.8752ZM14.6557 9.92263L15.326 9.53727L15.9997 9.92263V10.6898L15.326 11.0751V10.308L14.6557 9.92263ZM15.326 12.9409L15.3297 11.6244L16.0001 11.2391V13.3294L14.1754 14.3694V13.5987L15.326 12.9409Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M14.8453 12.668L14.175 13.0498V12.2827L14.8453 11.8973V12.668Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M14.8453 10.5809L14.849 11.3516L13.6947 12.0098V13.3294L13.0243 13.7112L12.3539 13.3294V12.0098L11.1996 11.3516V10.5809L11.8728 10.1955L13.0202 10.8569L14.1745 10.1955L14.8482 10.5809H14.8453ZM11.1992 9.26481L13.0206 8.22122L14.8453 9.26481L14.175 9.65017L13.0206 8.98875L11.8695 9.65017L11.1992 9.26481Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5009_17700">
-                      <rect width="16" height="16" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="currency-name">Tether BEP-20</span>
-              </button>
-              <button class="currency-option">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_5009_25241)">
-                    <path
-                      d="M9.5224 8.52574V8.52371C9.43693 8.52978 8.99569 8.55607 8.01382 8.55607C7.22872 8.55607 6.67816 8.53383 6.48338 8.52371V8.52574C3.46423 8.39024 1.21229 7.85633 1.21229 7.21524C1.21229 6.57617 3.46622 6.04024 6.48338 5.90474V7.99385C6.68015 8.00801 7.24661 8.04239 8.02773 8.04239C8.96587 8.04239 9.43495 8.00194 9.5224 7.99385V5.90676C12.5356 6.04428 14.7816 6.57819 14.7816 7.21726C14.7816 7.85633 12.5336 8.39024 9.5224 8.52776M9.5224 5.69037V3.82169H13.7262V0.972168H2.28161V3.82169H6.48536V5.69037C3.0687 5.85013 0.500732 6.53774 0.500732 7.36287C0.500732 8.188 3.07068 8.87561 6.48536 9.0374V15.0277H9.52439V9.0374C12.9351 8.87763 15.4991 8.19002 15.4991 7.36489C15.4991 6.54179 12.9351 5.85216 9.52439 5.69239"
+                      d="M9.5224 8.52571V8.52368C9.43693 8.52975 8.99569 8.55604 8.01382 8.55604C7.22872 8.55604 6.67816 8.53379 6.48338 8.52368V8.52571C3.46423 8.39021 1.21229 7.8563 1.21229 7.21521C1.21229 6.57614 3.46622 6.04021 6.48338 5.90471V7.99382C6.68015 8.00798 7.24661 8.04236 8.02773 8.04236C8.96587 8.04236 9.43495 8.00191 9.5224 7.99382V5.90673C12.5356 6.04425 14.7816 6.57816 14.7816 7.21723C14.7816 7.8563 12.5336 8.39021 9.5224 8.52773M9.5224 5.69034V3.82166H13.7262V0.972137H2.28161V3.82166H6.48536V5.69034C3.0687 5.8501 0.500732 6.53771 0.500732 7.36284C0.500732 8.18797 3.07068 8.87558 6.48536 9.03737V15.0276H9.52439V9.03737C12.9351 8.87763 15.4991 8.19002 15.4991 7.36489C15.4991 6.54179 12.9351 5.85216 9.52439 5.69236"
                       fill="white"
                     />
                     <path
@@ -1140,6 +1228,85 @@
         </button>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-column">
+              <h3 class="footer-title">Игры Steam</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Игры Playstation</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Онлайн-сервисы</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Пополнение Steam</a></li>
+                <li><a href="#" class="footer-link">Playstation Plus</a></li>
+                <li><a href="#" class="footer-link">Netflix</a></li>
+                <li><a href="#" class="footer-link">Пакет Adobe</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Обмен предметов</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Купить предметы</a></li>
+                <li><a href="#" class="footer-link">Продать предметы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-middle">
+        <div class="container">
+          <div class="footer-links-row">
+            <a href="#" class="footer-link">Связаться с нами</a>
+            <a href="#" class="footer-link">Правила</a>
+            <a href="#" class="footer-link">Политика конфиденциальности</a>
+            <a href="mailto:support@keys-store.com" class="footer-link">support@keys-store.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-copyright">
+            <p>&copy; 2025 keys-store.com</p>
+            <p>Saturia Limited, Office A, 16/F, Heng Shan Centre, 145 Queen's Road East, Wan Chai, HK</p>
+          </div>
+          <div class="footer-payment">
+            <div class="payment-methods">
+              <img src="/assets/images/bitcoin.svg" alt="Bitcoin" class="payment-icon" />
+              <img src="/assets/images/eth.svg" alt="Ethereum" class="payment-icon" />
+              <img src="/assets/images/tether 3.svg" alt="Tether" class="payment-icon" />
+              <img src="/assets/images/SPB.svg" alt="СБП" class="payment-icon" />
+              <img src="/assets/images/visa.svg" alt="Visa" class="payment-icon" />
+              <img src="/assets/images/mastercard.svg" alt="Mastercard" class="payment-icon" />
+              <img src="/assets/images/Sber.svg" alt="Сбербанк" class="payment-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/scripts/script.js"></script>
