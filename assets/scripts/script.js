@@ -240,14 +240,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const gamesSwiper = new Swiper('.games-swiper', {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    pagination: {
+      el: '.games-swiper .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.games-swiper .swiper-button-next',
+      prevEl: '.games-swiper .swiper-button-prev',
+    },
     breakpoints: {
       320: {
-        slidesPerView: 1.2,
-        spaceBetween: 16,
+        slidesPerView: 'auto',
+
+        spaceBetween: 4,
       },
       480: {
-        slidesPerView: 2.2,
-        spaceBetween: 20,
+        slidesPerView: 'auto',
+        spaceBetween: 4,
       },
       768: {
         slidesPerView: 3.2,
@@ -286,4 +295,35 @@ document.addEventListener('DOMContentLoaded', function() {
       gamesSwiper.slideNext();
     });
   }
+
+  const genresSwiper = new Swiper('.genres-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    pagination: {
+      el: '.genres-swiper .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.genres-swiper .swiper-button-next',
+      prevEl: '.genres-swiper .swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1.5,
+        spaceBetween: 4,
+      },
+      480: {
+        slidesPerView: 3.2,
+        spaceBetween: 4,
+      },
+      768: {
+        slidesPerView: 4.2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      }
+    }
+  });
 });

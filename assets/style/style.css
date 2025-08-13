@@ -1948,7 +1948,8 @@ padding: 2px 6px;
 
  .platform-btn.active {
   background: radial-gradient(50.34% 100% at 49.83% 100%, #0f50f45b 0%, rgba(15, 80, 244, 0) 100%);
-  color:#ffffff;
+  color: var(--light-blue-400);
+  border-bottom: 1px solid var(--light-blue-400);
  }
 
 
@@ -2013,6 +2014,12 @@ display: flex;
 
  .games-swiper {
    margin-bottom: 40px;
+ }
+ 
+ .games-swiper .swiper-pagination,
+ .games-swiper .swiper-button-next,
+ .games-swiper .swiper-button-prev {
+   display: none;
  }
 
  .game-card {
@@ -2185,6 +2192,7 @@ gap: 8px;
  @media screen and (max-width: 768px) {
    .games-section {
      padding: 40px 0;
+     overflow: hidden;
    }
    
    .games-header {
@@ -2196,10 +2204,15 @@ gap: 8px;
    }
    
    .games-nav {
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
+     overflow: auto;
+     scrollbar-width: none;
+     -ms-overflow-style: none;
+    
      gap: 12px;
      margin-bottom: 24px;
    }
+
    
    .platform-btn {
      padding: 6px 12px;
@@ -2212,13 +2225,21 @@ gap: 8px;
      justify-content: center;
      margin-top: 16px;
    }
+
+   .games-swiper .swiper-slide{
+    width: 240px;
+   }
+
+   .game-image{
+    height: 260px;
+   }
    
    .game-card {
      width: 240px;
    }
    
    .game-image {
-     height: 140px;
+     height: 260px;
    }
    
    .game-info {
@@ -2238,6 +2259,26 @@ gap: 8px;
      justify-content: center;
      padding: 14px 24px;
      font-size: 14px;
+   }
+   
+   .games-swiper .swiper-pagination {
+     display: block !important;
+     bottom: -40px !important;
+   }
+   
+   .games-swiper .swiper-button-next,
+   .games-swiper .swiper-button-prev {
+     display: flex !important;
+     bottom: -50px !important;
+     top: auto !important;
+     width: 38px !important;
+     height: 38px !important;
+     outline: 0 !important;
+   }
+   
+   .games-swiper .swiper-button-next::after,
+   .games-swiper .swiper-button-prev::after {
+     font-size: 16px !important;
    }
  }
 
@@ -2438,20 +2479,52 @@ color: var(--white-400);
    .discount-banner {
      padding: 40px 0;
    }
+
+   .games-swiper{
+    overflow: visible;
+   }
+
+   .nav-arrows{
+    display: none;
+   }
+
+   .games-swiper {
+    margin-bottom: 70px;
+}
+
+
    
    .banner-content {
      flex-direction: column;
      text-align: center;
+     background-image: url(/assets/images/back_mob.png);
+     background-size: cover;
+     padding: 16px;
      gap: 40px;
+     height: 520px;
+   }
+
+   .banner-right{
+    display: none;
    }
    
    .banner-left {
      max-width: 100%;
+     width: 100%;
+     justify-content: flex-end;
    }
    
    .banner-title {
-     font-size: 28px;
-     justify-content: center;
+     font-size: 20px;
+     justify-content: flex-start;
+   }
+
+   .popular-card{
+    width: 100%;
+   }
+
+   .popular-swiper{
+    padding: 0;
    }
    
    .discount-highlight {
@@ -2460,16 +2533,16 @@ color: var(--white-400);
    }
    
    .banner-subtitle {
-     font-size: 16px;
+     font-size: 20px;
    }
    
    .banner-description {
-     font-size: 14px;
+     font-size: 17px;
    }
    
    .banner-btn {
      width: 100%;
-     max-width: 280px;
+     max-width: 100%;
    }
    
    .character-img {
@@ -2519,6 +2592,25 @@ color: var(--white-400);
   grid-template-columns: repeat(4, 1fr);
   gap:4px;
   width: 100%;
+}
+
+.genres-swiper {
+  display: none;
+}
+
+.genres-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.genres-swiper .swiper-button-next,
+.genres-swiper .swiper-button-prev {
+  color: var(--toxic-green-400);
+}
+
+.genres-swiper .swiper-button-next:hover,
+.genres-swiper .swiper-button-prev:hover {
+  color: var(--toxic-green-300);
 }
 
 .genre-card {
@@ -2647,13 +2739,51 @@ background: var(--royal-blue-400);;
 
 @media screen and (max-width: 768px) {
   .genres-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    display: none;
+  }
+  
+  .genres-swiper {
+    display: block;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .genres-swiper .swiper-pagination{
+    bottom: 0 !important;
+  }
+
+  .genres-swiper .swiper-button-next,
+  .genres-swiper .swiper-button-prev{
+    top: 100% !important;
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px;
+    background: var(--dark-200);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .genres-swiper .swiper-button-next::after, .genres-swiper .swiper-button-prev::after{
+    font-size: 10px !important;
+  }
+
+  .genres-section{
+   overflow: hidden;
   }
   
   .genres-header {
     margin-bottom: 40px;
   }
+  
+.genre-icon{
+  width: 80px;
+}
+
+.genre-card{
+  height: 180px;
+}
   
   .genres-section {
     padding: 40px 0;
@@ -2754,6 +2884,7 @@ color: var(--white-400);
     gap: 24px;
   }
   
+  
   .features-section {
     padding: 60px 0;
   }
@@ -2768,23 +2899,62 @@ color: var(--white-400);
   .features-section {
     padding: 40px 0;
   }
-  
-  .features-description {
-    font-size: 16px;
-    margin-bottom: 40px;
+
+  .features-wrapper{
+    padding: 24px 16px 16px 16px;
+    height: auto;
+    background: var(--dark-400);
+
   }
   
+  .features-description {
+    font: 600 17px / 120% var(--second-family);
+    text-align: center;
+    color: var(--white-400);
+    margin-bottom: 32px;
+  }
+
+  .features-title{
+    font: 600 28px / 120% var(--second-family);
+text-align: center;
+color: var(--white-400);
+  }
+  
+  .feature-icon img{
+    width: 48px;
+  }
+
+
+
   .feature-card {
-    padding: 24px 20px;
+    padding: 16px;
+    gap: 16px;
   }
   
   .feature-title {
-    font-size: 18px;
+    font-size: 20px;
   }
+
+  .wrapper {
+    display: flex
+;
+    gap: 26px;
+    flex-direction: column;
+}
+
+.genres-cta{
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
 }
 
 .footer {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .footer-top {
