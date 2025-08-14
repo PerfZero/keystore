@@ -237,6 +237,94 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+          const onlineServicesSwiper = new Swiper('.online-services-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 20,
+
+          pagination: {
+            el: '.online-services-swiper .swiper-pagination',
+            clickable: true,
+          },
+
+          autoplay: {
+            delay: 3000, // время между слайдами в миллисекундах
+            disableOnInteraction: false // не останавливать после взаимодействия
+          },
+        
+
+            
+          loop: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 16,
+            },
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            }
+          }
+        });
+
+        const thumbnailsContainer = document.querySelector('.online-services-thumbnails');
+        let progressInterval;
+
+        const thumbnails = thumbnailsContainer.querySelectorAll('.online-services-thumbnail');
+        thumbnails.forEach(thumbnail => {
+          thumbnail.addEventListener('click', () => {
+            const slideIndex = parseInt(thumbnail.dataset.slideIndex);
+            onlineServicesSwiper.slideTo(slideIndex);
+          });
+        });
+
+        function updateProgress() {
+          const thumbnails = thumbnailsContainer.querySelectorAll('.online-services-thumbnail');
+          const activeIndex = onlineServicesSwiper.activeIndex;
+          
+          thumbnails.forEach((thumbnail, index) => {
+            thumbnail.classList.remove('active');
+            thumbnail.style.setProperty('--progress', '0%');
+          });
+          
+          if (thumbnails[activeIndex]) {
+            thumbnails[activeIndex].classList.add('active');
+          }
+        }
+
+                 function startProgressAnimation() {
+           clearInterval(progressInterval);
+           const activeThumbnail = thumbnailsContainer.querySelector('.online-services-thumbnail.active');
+           if (!activeThumbnail) return;
+           
+           let progress = 0;
+           const duration = 3000;
+           const interval = 5;
+           const increment = (interval / duration) * 100;
+           
+           progressInterval = setInterval(() => {
+             progress += increment;
+             if (progress >= 100) {
+               progress = 100;
+               clearInterval(progressInterval);
+             }
+             activeThumbnail.style.setProperty('--progress', progress + '%');
+           }, interval);
+         }
+
+        onlineServicesSwiper.on('slideChange', function() {
+          updateProgress();
+          startProgressAnimation();
+        });
+
+        onlineServicesSwiper.on('init', function() {
+          updateProgress();
+          startProgressAnimation();
+        });
+
   const gamesSwiper = new Swiper('.games-swiper', {
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -273,9 +361,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  function initGameImageSwipers() {
+    const gameImageSwipers = document.querySelectorAll('.game-image-swiper');
+    gameImageSwipers.forEach((swiperEl, index) => {
+      if (!swiperEl.swiper) {
+        const swiper = new Swiper(swiperEl, {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          loop: true,
+          pagination: {
+            el: swiperEl.querySelector('.game-image-pagination'),
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + ' game-image-pagination-bullet"></span>';
+            },
+          },
+        });
+      }
+    });
+  }
+
+  initGameImageSwipers();
+
   const platformBtns = document.querySelectorAll('.platform-btn');
-  const navArrowPrev = document.querySelector('.nav-arrow.prev');
-  const navArrowNext = document.querySelector('.nav-arrow.next');
+  const gamesNavArrowPrev = document.querySelector('.games-nav .nav-arrow.prev');
+  const gamesNavArrowNext = document.querySelector('.games-nav .nav-arrow.next');
+  const onlineServicesNavArrowPrev = document.querySelector('.online-services-nav .nav-arrow.prev');
+  const onlineServicesNavArrowNext = document.querySelector('.online-services-nav .nav-arrow.next');
 
   platformBtns.forEach(btn => {
     btn.addEventListener('click', function() {
@@ -286,13 +398,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  if (navArrowPrev && navArrowNext) {
-    navArrowPrev.addEventListener('click', () => {
+  if (gamesNavArrowPrev && gamesNavArrowNext) {
+    gamesNavArrowPrev.addEventListener('click', () => {
       gamesSwiper.slidePrev();
     });
 
-    navArrowNext.addEventListener('click', () => {
+    gamesNavArrowNext.addEventListener('click', () => {
       gamesSwiper.slideNext();
+    });
+  }
+
+  if (onlineServicesNavArrowPrev && onlineServicesNavArrowNext) {
+    onlineServicesNavArrowPrev.addEventListener('click', () => {
+      onlineServicesSwiper.slidePrev();
+    });
+
+    onlineServicesNavArrowNext.addEventListener('click', () => {
+      onlineServicesSwiper.slideNext();
     });
   }
 
