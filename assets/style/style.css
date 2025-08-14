@@ -1926,7 +1926,7 @@ padding: 2px 6px;
   }
 
   .online-services-section {
-    padding: 40px 0 0;
+    padding: 40px 0 0 !important;
   }
   
   .online-services-top {
@@ -3720,6 +3720,15 @@ opacity: 0.5;
   .footer-main {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+  }
+
+  .popular-swiper .swiper-pagination{
+    bottom: 10px !important;
+    margin-top: 70px;
+  }
+
+  .popular-swiper  .swiper-button-next,  .popular-swiper  .swiper-button-prev{
+    bottom: 0;
   }
 
   .slide-title{
