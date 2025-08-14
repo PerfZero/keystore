@@ -792,7 +792,7 @@ color: var(--white-400);
   }
 
   .mobile-nav-item:hover {
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .mobile-nav-icon {
@@ -1927,6 +1927,22 @@ padding: 2px 6px;
 
   .online-services-section {
     padding: 40px 0 0 !important;
+  }
+
+  .mobile-nav-item:nth-child(2) img{
+    opacity: 0.4;
+  }
+
+  .mobile-nav-item:nth-child(3) img{
+    opacity: 0.4;
+  }
+
+  .mobile-nav-item:nth-child(4) .mobile-nav-text {
+    color: #00ff00;
+  }
+
+  .mobile-nav-item:nth-child(4) path{
+    stroke: #00ff00;
   }
   
   .online-services-top {
