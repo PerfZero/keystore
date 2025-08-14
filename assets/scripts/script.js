@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchBottomClose = document.getElementById('mobileSearchBottomClose');
   const mobileProfileDropdown = document.querySelector('.mobile-profile-dropdown');
   const mobileProfileTrigger = document.querySelector('.mobile-profile-trigger');
+  const skinMarketDropdown = document.querySelector('.nav-link.dropdown');
+  const skinMarketTrigger = document.querySelector('.dropdown-trigger');
 
   function openSearchDropdown() {
     searchDropdown.classList.add('active');
@@ -415,6 +417,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     onlineServicesNavArrowNext.addEventListener('click', () => {
       onlineServicesSwiper.slideNext();
+    });
+  }
+
+  if (skinMarketDropdown && skinMarketTrigger) {
+    skinMarketTrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+      const dropdownMenu = skinMarketDropdown.querySelector('.dropdown-menu');
+      dropdownMenu.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!skinMarketDropdown.contains(e.target)) {
+        const dropdownMenu = skinMarketDropdown.querySelector('.dropdown-menu');
+        dropdownMenu.classList.remove('active');
+      }
     });
   }
 
