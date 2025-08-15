@@ -2747,6 +2747,7 @@ display: flex;
  .swiper-pagination-bullet.game-image-pagination-bullet {
    width: 11px !important;
    height: 6px;
+   margin: 0;
    width: auto;
    border-radius: 50%;
    background: rgba(255, 255, 255, 0.3);
