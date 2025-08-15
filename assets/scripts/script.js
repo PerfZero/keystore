@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const headerMain = document.querySelector('.header-main');
   const headerSearchInput = document.getElementById('headerSearchInput');
   const searchDropdown = document.getElementById('searchDropdown');
   const searchOverlay = document.getElementById('searchOverlay');
@@ -18,6 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileProfileTrigger = document.querySelector('.mobile-profile-trigger');
   const skinMarketDropdown = document.querySelector('.nav-link.dropdown');
   const skinMarketTrigger = document.querySelector('.dropdown-trigger');
+
+  function handleHeaderScroll() {
+    if (window.scrollY >= 51) {
+      headerMain.classList.add('fixed');
+    } else {
+      headerMain.classList.remove('fixed');
+    }
+  }
+
+  window.addEventListener('scroll', handleHeaderScroll);
 
   function openSearchDropdown() {
     searchDropdown.classList.add('active');
