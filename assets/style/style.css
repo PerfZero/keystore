@@ -2610,7 +2610,6 @@ width: fit-content;
   color: var(--white-400);
   border-radius: 48px;
   padding: 2px 8px;
-  width: 23px;
 height: 16px;
  }
 
@@ -2722,7 +2721,7 @@ display: flex;
    bottom: 12px;
   justify-content: center;
    display: flex;
-   gap: 6px;
+   gap: 3px;
    z-index: 10;
    opacity: 0;
    transition: opacity 0.3s ease;
@@ -2746,7 +2745,7 @@ display: flex;
  }
 
  .swiper-pagination-bullet.game-image-pagination-bullet {
-   width: 31px !important;
+   width: 11px !important;
    height: 6px;
    width: auto;
    border-radius: 50%;
@@ -2758,6 +2757,7 @@ display: flex;
 
  .swiper-pagination-bullet.game-image-pagination-bullet.swiper-pagination-bullet-active {
    background: var(--white-400);
+   width: 31px !important;
 
  }
 
@@ -2785,7 +2785,6 @@ display: flex;
   padding: 12px;
   width: 40px;
   z-index: 999;
-  height: 64px;
   display: flex
 ;
   gap: 8px;
