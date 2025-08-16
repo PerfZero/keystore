@@ -35,6 +35,18 @@
   box-sizing: border-box;
 }
 
+/* Отключение приближения на iPhone при фокусе на input */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  font-size: 16px;
+}
+
 body {
   background-color: var(--background);
   color: var(--white-400);
@@ -1188,12 +1200,18 @@ color: var(--white-400);
   visibility: hidden;
   transform: translateY(100%);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 
 .mobile-search.active {
   opacity: 1;
+  overflow: auto;
   visibility: visible;
   transform: translateY(0);
+}
+
+body.mobile-search-open {
+  overflow: hidden;
 }
 
 .mobile-search-bar {
@@ -1268,10 +1286,10 @@ color: var(--white-400);
 }
 
 .mobile-search-bottom-close {
-  position: fixed;
-left: 50%;
-transform: translateX(-50%) translateY(100px);
-bottom: 120px;
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  bottom: 20px;
   width: 48px;
   height: 48px;
   border: none;
@@ -1280,10 +1298,11 @@ bottom: 120px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 10001;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
   background: var(--royal-blue-400);
   opacity: 0;
+  margin: 0 auto;
 }
 
 .mobile-search.active .mobile-search-bottom-close {
@@ -1342,6 +1361,7 @@ padding: 6px 12px;
 .mobile-search.active .mobile-section {
   opacity: 1;
   transform: translateY(0);
+  overflow: auto;
 }
 
 .mobile-search.active .mobile-section:nth-child(2) {
@@ -1350,6 +1370,7 @@ padding: 6px 12px;
 
 .mobile-search.active .mobile-section:nth-child(3) {
   transition-delay: 0.5s;
+  margin-bottom: 80px;
 }
 
 .mobile-section-title {

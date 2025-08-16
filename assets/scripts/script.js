@@ -81,9 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileSearch = document.getElementById('mobileSearch');
     mobileSearch.classList.toggle('active');
     if (mobileSearch.classList.contains('active')) {
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('mobile-search-open');
     } else {
-      document.body.style.overflow = '';
+      document.body.classList.remove('mobile-search-open');
     }
   });
 
@@ -200,7 +200,18 @@ document.addEventListener('DOMContentLoaded', function() {
   mobileSearchBottomClose.addEventListener('click', function() {
     const mobileSearch = document.getElementById('mobileSearch');
     mobileSearch.classList.remove('active');
-    document.body.style.overflow = '';
+    document.body.classList.remove('mobile-search-open');
+  });
+
+  // Close mobile search with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const mobileSearch = document.getElementById('mobileSearch');
+      if (mobileSearch.classList.contains('active')) {
+        mobileSearch.classList.remove('active');
+        document.body.classList.remove('mobile-search-open');
+      }
+    }
   });
 
   showCookieBanner();
