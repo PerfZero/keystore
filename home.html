@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой сайт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+              <div class="tooltip">
+                <svg
+                  width="15"
+                  height="7"
+                  viewBox="0 0 15 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.8389 5.57031L8.12305 0.992188C7.54385 0.429849 6.59873 0.429849 6.01953 0.992188L1.30371 5.57031H12.8389Z"
+                    fill="#2A2A33"
+                    stroke="#2A2A33"
+                  />
+                </svg>
+                Вы можете изменить настройки валюты здесь
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="logo">
+            <div class="logo-icons">
+              <img src="/assets/images/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <img src="/assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Искать в магазине..."
+              class="search-input search"
+              id="headerSearchInput"
+            />
+            <span class="search-enter-btn">ENTER</span>
+            <div class="search-overlay" id="searchOverlay"></div>
+            <div class="search-dropdown" id="searchDropdown">
+              <div class="search-dropdown-filters">
+                <svg
+                  width="33"
+                  height="22"
+                  viewBox="0 0 33 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.3"
+                    d="M1.5 1.5V8.5C1.5 15.1274 6.87258 20.5 13.5 20.5H31.5"
+                    stroke="#71717D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <button class="search-filter-btn active">Везде</button>
+                <button class="search-filter-btn">Игры Steam</button>
+                <button class="search-filter-btn">Игры PS</button>
+                <button class="search-filter-btn">Онлайн-сервисы</button>
+              </div>
+
+              <div class="search-dropdown-results">
+                <div class="search-results-section">
+                  <h3 class="search-results-title">ИГРЫ</h3>
+                  <div class="search-results-separator"></div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Deep Rock Galactic</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Path of Exile 2</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Arma Reforger</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name"
+                      >Lost Eidolons: Veil of the Witch</span
+                    >
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-results-section">
+                  <h3 class="search-results-title">ОНЛАЙН СЕРВИСЫ</h3>
+                  <div class="search-results-separator"></div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Пополнение Steam</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Подписка NETFLIX</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name"
+                      >Подписка PlayStation Plus</span
+                    >
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Gamepass</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <div class="action-item">
+              <div class="cart-wrapper">
+                <img src="/assets/images/cart.svg" alt="" class="action-icon" />
+                <span class="cart-count">3</span>
+              </div>
+              <span class="action-text">Корзина</span>
+            </div>
+            <div class="action-item profile-dropdown">
+              <div class="profile-trigger">
+                <img
+                  src="/assets/images/login.svg"
+                  alt=""
+                  class="action-icon"
+                />
+                <span class="action-text">waveneasymynic...</span>
+              </div>
+              <div class="profile-dropdown-menu">
+                <div class="profile-info">
+                  <div class="profile-avatar">
+                    <img src="/assets/images/user.png" alt="" />
+                  </div>
+                  <div class="profile-details">
+                    <div class="profile-username">waveneasymynic...</div>
+                    <div class="profile-balance">9 883 ₽</div>
+                  </div>
+                </div>
+                <div class="profile-actions">
+                  <a href="#" class="profile-action">
+                    <span>Профиль в Steam</span>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 9.5L9.5 2.5M9.5 2.5H3.5M9.5 2.5V8.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="profile-action">
+                    <span>Выйти из профиля</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <div class="nav-link dropdown">
+            <a href="#" class="dropdown-trigger">
+              Маркет скинов
+              <svg
+                width="11"
+                height="7"
+                viewBox="0 0 11 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.40599 1.05L5.49399 4.95001L1.59399 1.05"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">CS2 Скины</a>
+              <a href="#" class="dropdown-item">Dota 2 Скины</a>
+              <a href="#" class="dropdown-item">Rust Скины</a>
+              <a href="#" class="dropdown-item">TF2 Скины</a>
+              <a href="#" class="dropdown-item">Все скины</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <div class="container">
+        <div class="mobile-nav-item" id="mobileSearchItem">
+          <img src="/assets/images/search.svg" alt="" class="mobile-nav-icon" />
+          <span class="mobile-nav-text">Поиск</span>
+        </div>
+        <div class="mobile-nav-item">
+          <div class="cart-wrapper">
+            <img src="/assets/images/cart.svg" alt="" class="mobile-nav-icon" />
+            <span class="cart-count">3</span>
+          </div>
+          <span class="mobile-nav-text">Корзина</span>
+        </div>
+        <div class="mobile-nav-item mobile-profile-dropdown">
+          <div class="mobile-profile-trigger">
+            <img
+              src="/assets/images/login.svg"
+              alt=""
+              class="mobile-nav-icon"
+            />
+            <span class="mobile-nav-text">Войти</span>
+          </div>
+          <div class="mobile-profile-dropdown-menu">
+            <div class="mobile-profile-info">
+              <div class="mobile-profile-avatar">
+                <img src="/assets/images/user.png" alt="" />
+              </div>
+              <div class="mobile-profile-details">
+                <div class="mobile-profile-username">waveneasymynic...</div>
+                <div class="mobile-profile-balance">9 883 ₽</div>
+              </div>
+            </div>
+            <div class="mobile-profile-actions">
+              <a href="#" class="mobile-profile-action">
+                <span>Профиль в Steam</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 9.5L9.5 2.5M9.5 2.5H3.5M9.5 2.5V8.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="mobile-profile-action">
+                <span>Выйти из профиля</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-nav-icon">
+            <path d="M3 6H21M3 12H21M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="mobile-nav-text">Меню</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Search -->
+    <div class="mobile-search" id="mobileSearch">
+      <div class="container">
+        <!-- Search Bar -->
+        <div class="mobile-search-bar">
+          <svg
+            class="mobile-search-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.5 17.5L12.5 12.5M14.1667 8.33333C14.1667 11.555 11.555 14.1667 8.33333 14.1667C5.11167 14.1667 2.5 11.555 2.5 8.33333C2.5 5.11167 5.11167 2.5 8.33333 2.5C11.555 2.5 14.1667 5.11167 14.1667 8.33333Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <input
+            type="text"
+            class="mobile-search-input"
+            placeholder="Искать в магазине..."
+          />
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="mobile-search-filters">
+          <button class="mobile-filter-btn active">Везде</button>
+          <button class="mobile-filter-btn">Игры Steam</button>
+          <button class="mobile-filter-btn">Игры PS</button>
+          <button class="mobile-filter-btn">Онлайн-сервисы</button>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="mobile-search-content">
+          <!-- Skin Market Section -->
+          <div class="mobile-section">
+            <h3 class="mobile-section-title">МАРКЕТ СКИНОВ</h3>
+            <div class="mobile-cards">
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <img src="/assets/images/skins.png" alt="" />
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">Маркет скинов</h4>
+                  <button class="mobile-card-btn">Купить скины</button>
+                </div>
+                <svg
+                  class="mobile-card-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 9L7.5 6L4.5 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <img src="/assets/images/skins.png" alt="" />
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">Маркет скинов</h4>
+                  <button class="mobile-card-btn">Продать скины</button>
+                </div>
+                <svg
+                  class="mobile-card-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 9L7.5 6L4.5 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Steam Section -->
+          <div class="mobile-section">
+            <h3 class="mobile-section-title">STEAM</h3>
+            <div class="mobile-cards">
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <img src="/assets/images/skins.png" alt="" />
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">Steam</h4>
+                  <button class="mobile-card-btn">Каталог игр</button>
+                </div>
+                <img src="/assets/images/skins.png" alt="" />
+              </div>
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">Steam</h4>
+                  <button class="mobile-card-btn">Пополнить кошелек</button>
+                </div>
+                <svg
+                  class="mobile-card-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 9L7.5 6L4.5 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- PlayStation Section -->
+          <div class="mobile-section">
+            <h3 class="mobile-section-title">PLAYSTATION</h3>
+            <div class="mobile-cards">
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">PlayStation</h4>
+                  <button class="mobile-card-btn">
+                    Подписка PlayStation Plus
+                  </button>
+                </div>
+                <svg
+                  class="mobile-card-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 9L7.5 6L4.5 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="mobile-card">
+                <div class="mobile-card-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="mobile-card-content">
+                  <h4 class="mobile-card-title">PlayStation</h4>
+                  <button class="mobile-card-btn">Игры на PlayStation</button>
+                </div>
+                <svg
+                  class="mobile-card-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 9L7.5 6L4.5 3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Close Button -->
+      <button class="mobile-search-bottom-close" id="mobileSearchBottomClose">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18M6 6L18 18"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Hero Section with Swiper -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-content">
+                  <div class="hero-image">
+                    <img src="/assets/images/logo_game.png" alt="Game Logo" />
+                  </div>
+                  <div class="hero-promo">
+                    <div class="promo-prices">
+                      <div class="promo-badge">-12%</div>
+                      <div class="promo-price">
+                        <span class="current-price">2 588 ₽</span>
+                        <span class="original-price">2 580 ₽</span>
+                      </div>
+                    </div>
+                    <div class="promo-bitcoin">≈0.000031235 BTC</div>
+                    <h2 class="promo-title">
+                      Сразитесь с роботами и монстрами и знайте, что скрывается
+                      за мечтой об идеальном будущем!
+                    </h2>
+                    <div class="promo-genres">Шутер, Экшен, Хоррор</div>
+                    <button class="promo-btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero-slide">
+                <div class="hero-content">
+                  <div class="hero-image">
+                    <img src="/assets/images/logo_game.png" alt="Game Logo" />
+                  </div>
+                  <div class="hero-promo">
+                    <div class="promo-prices">
+                      <div class="promo-badge">-12%</div>
+                      <div class="promo-price">
+                        <span class="current-price">2 588 ₽</span>
+                        <span class="original-price">2 580 ₽</span>
+                      </div>
+                    </div>
+                    <div class="promo-bitcoin">≈0.000031235 BTC</div>
+                    <h2 class="promo-title">
+                      Сразитесь с роботами и монстрами и знайте, что скрывается
+                      за мечтой об идеальном будущем!
+                    </h2>
+                    <div class="promo-genres">Шутер, Экшен, Хоррор</div>
+                    <button class="promo-btn">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-section">
+      <div class="container">
+        <div class="popular-header section-header">
+          <h2 class="popular-title section-title">Популярное</h2>
+          <div class="popular-count section-count">5</div>
+        </div>
+        <div class="popular-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="popular-card">
+                <div class="card-badge">3000+ предметов</div>
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="/assets/images/popular_1.png" alt="Обмен предметов" />
+                  </div>
+                  <img class="badge_image" src="/assets/images/noj.svg" alt="">
+                </div>
+                <h3 class="card-title">Обмен предметов <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.05002 1.094L4.95002 5.00601L1.05002 8.90601" stroke="white" stroke-width="2" />
+                </svg></h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="popular-card">
+                <div class="card-badge">3000+ игр</div>
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="/assets/images/popular_2.png" alt="Игры Steam" />
+                  </div>
+                  <img class="badge_image" src="/assets/images/steam.svg" alt="">
+                </div>
+                <h3 class="card-title">Игры Steam <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.05002 1.094L4.95002 5.00601L1.05002 8.90601" stroke="white" stroke-width="2" />
+                </svg></h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="popular-card">
+                <div class="card-badge">3000+ игр</div>
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="/assets/images/popular_3.png" alt="Игры PlayStation" />
+                  </div>
+                  <img class="badge_image" src="/assets/images/sony.png" alt="">
+                </div>
+                <h3 class="card-title">Игры PlayStation <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.05002 1.094L4.95002 5.00601L1.05002 8.90601" stroke="white" stroke-width="2" />
+                </svg></h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="popular-card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="/assets/images/popular_4.png" alt="Пополнить Steam" />
+                  </div>
+                  <img class="badge_image" src="/assets/images/steam.svg" alt="">
+                </div>
+                <h3 class="card-title">Пополнить Steam <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.05002 1.094L4.95002 5.00601L1.05002 8.90601" stroke="white" stroke-width="2" />
+                </svg></h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="popular-card">
+                <div class="card-content">
+                  <div class="card-image">
+                    <img src="/assets/images/popular_5.png" alt="Подписка PlayStation Plus" />
+                  </div>
+                  <img class="badge_image" src="/assets/images/sony.png" alt="">
+                </div>
+                <h3 class="card-title">Подписка PlayStation Plus <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.05002 1.094L4.95002 5.00601L1.05002 8.90601" stroke="white" stroke-width="2" />
+                </svg></h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="online-services-section">
+      <div class="container">
+        <div class="online-services-top">
+          <div class="online-services-header section-header">
+            <h2 class="online-services-title section-title">Онлайн-сервисы</h2>
+            <div class="online-services-count section-count">5</div>
+          </div>
+          
+          <div class="online-services-nav">
+            <div class="nav-arrows">
+              <button class="nav-arrow prev">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 9L4.5 6L7.5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="nav-arrow next">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.5 9L7.5 6L4.5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="online-services-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="online-service-slide">
+                <div class="slide-content">
+                  <div class="slide-features">
+                    <span class="feature">Быстрая доставка</span>
+                    <span class="feature">Выгодные цены</span>
+                    <span class="feature">Безопасно</span>
+                    <span class="feature">С заходом на аккаунт</span>
+                  </div>
+                  <div class="slide-price-block">
+                    <div class="price-top">
+                      <span class="discount-text">до -40%</span>
+                      <span class="price-main">2 588 ₽</span>
+                    </div>
+                    <span class="price-crypto">≈0.000031235 BTC</span>
+                  </div>
+                  <h3 class="slide-title">Подписка PlayStation Plus</h3>
+                  <p class="slide-description">PlayStation Plus — подписка, которая предоставляет доступ к онлайн-играм, бесплатным играм каждый месяц, скидкам в PlayStation Store и облачному хранилищу для сохранений.</p>
+                  <button class="slide-button">Купить</button>
+                </div>
+                <div class="slide-image">
+                 <img src="/assets/images/game.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="online-service-slide">
+                <div class="slide-content">
+                  <div class="slide-features">
+                    <span class="feature">Быстрая доставка</span>
+                    <span class="feature">Выгодные цены</span>
+                    <span class="feature">Безопасно</span>
+                    <span class="feature">С заходом на аккаунт</span>
+                  </div>
+                  <div class="slide-price-block">
+                    <div class="price-top">
+                      <span class="discount-text">до -40%</span>
+                      <span class="price-main">2 588 ₽</span>
+                    </div>
+                    <span class="price-crypto">≈0.000031235 BTC</span>
+                  </div>
+                  <h3 class="slide-title">Подписка PlayStation Plus</h3>
+                  <p class="slide-description">PlayStation Plus — подписка, которая предоставляет доступ к онлайн-играм, бесплатным играм каждый месяц, скидкам в PlayStation Store и облачному хранилищу для сохранений.</p>
+                  <button class="slide-button">Купить</button>
+                </div>
+                <div class="slide-image">
+                 <img src="/assets/images/game.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="online-service-slide">
+                <div class="slide-content">
+                  <div class="slide-features">
+                    <span class="feature">Быстрая доставка</span>
+                    <span class="feature">Выгодные цены</span>
+                    <span class="feature">Безопасно</span>
+                    <span class="feature">С заходом на аккаунт</span>
+                  </div>
+                  <div class="slide-price-block">
+                    <div class="price-top">
+                      <span class="discount-text">до -40%</span>
+                      <span class="price-main">2 588 ₽</span>
+                    </div>
+                    <span class="price-crypto">≈0.000031235 BTC</span>
+                  </div>
+                  <h3 class="slide-title">Подписка PlayStation Plus</h3>
+                  <p class="slide-description">PlayStation Plus — подписка, которая предоставляет доступ к онлайн-играм, бесплатным играм каждый месяц, скидкам в PlayStation Store и облачному хранилищу для сохранений.</p>
+                  <button class="slide-button">Купить</button>
+                </div>
+                <div class="slide-image">
+                 <img src="/assets/images/game.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="online-service-slide">
+                <div class="slide-content">
+                  <div class="slide-features">
+                    <span class="feature">Быстрая доставка</span>
+                    <span class="feature">Выгодные цены</span>
+                    <span class="feature">Безопасно</span>
+                    <span class="feature">С заходом на аккаунт</span>
+                  </div>
+                  <div class="slide-price-block">
+                    <div class="price-top">
+                      <span class="discount-text">до -40%</span>
+                      <span class="price-main">2 588 ₽</span>
+                    </div>
+                    <span class="price-crypto">≈0.000031235 BTC</span>
+                  </div>
+                  <h3 class="slide-title">Подписка PlayStation Plus</h3>
+                  <p class="slide-description">PlayStation Plus — подписка, которая предоставляет доступ к онлайн-играм, бесплатным играм каждый месяц, скидкам в PlayStation Store и облачному хранилищу для сохранений.</p>
+                  <button class="slide-button">Купить</button>
+                </div>
+                <div class="slide-image">
+                 <img src="/assets/images/game.png" alt="">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="online-service-slide">
+                <div class="slide-content">
+                  <div class="slide-features">
+                    <span class="feature">Быстрая доставка</span>
+                    <span class="feature">Выгодные цены</span>
+                    <span class="feature">Безопасно</span>
+                    <span class="feature">С заходом на аккаунт</span>
+                  </div>
+                  <div class="slide-price-block">
+                    <div class="price-top">
+                      <span class="discount-text">до -40%</span>
+                      <span class="price-main">2 588 ₽</span>
+                    </div>
+                    <span class="price-crypto">≈0.000031235 BTC</span>
+                  </div>
+                  <h3 class="slide-title">Подписка PlayStation Plus</h3>
+                  <p class="slide-description">PlayStation Plus — подписка, которая предоставляет доступ к онлайн-играм, бесплатным играм каждый месяц, скидкам в PlayStation Store и облачному хранилищу для сохранений.</p>
+                  <button class="slide-button">Купить</button>
+                </div>
+                <div class="slide-image">
+                 <img src="/assets/images/game.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="online-services-thumbnails">
+          <div class="online-services-thumbnail active" data-slide-index="0">
+            <img src="/assets/images/online-services_1.png" alt="PlayStation Plus">
+          </div>
+          <div class="online-services-thumbnail" data-slide-index="1">
+            <img src="/assets/images/steam.svg" alt="Steam">
+          </div>
+          <div class="online-services-thumbnail" data-slide-index="2">
+            <img src="/assets/images/steam.svg" alt="Steam Gift Cards">
+          </div>
+          <div class="online-services-thumbnail" data-slide-index="3">
+            <img src="/assets/images/sony.png" alt="PlayStation Network">
+          </div>
+          <div class="online-services-thumbnail" data-slide-index="4">
+            <img src="/assets/images/steam.svg" alt="Steam Wallet">
+          </div>
+          <div class="online-services-thumbnail" data-slide-index="4">
+            Все сервисы<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.3999 0.792007L6.5999 6.00801L1.3999 11.208" stroke="white" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-section">
+      <div class="container">
+        <div class="games-header section-header">
+                      <h2 class="games-title section-title">Игры</h2>
+            <div class="games-count section-count">999+</div>
+        </div>
+        
+        <div class="games-nav">
+          <button class="platform-btn active">
+            <span class="platform-name">STEAM</span>
+            <span class="platform-count">4</span>
+          </button>
+          <button class="platform-btn">
+            <span class="platform-name">PLAYSTATION</span>
+            <span class="platform-count">4</span>
+          </button>
+          <button class="platform-btn">
+            <span class="platform-name">NINTENDO</span>
+            <span class="platform-count">4</span>
+          </button>
+          <button class="platform-btn locked">
+            <span class="platform-name">XBOX</span>
+            <span class="platform-count">4</span>
+           <img src="/assets/images/lock.svg" alt="">
+          </button>
+          <div class="nav-arrows">
+            <button class="nav-arrow prev">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 9L4.5 6L7.5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="nav-arrow next">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 9L7.5 6L4.5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="games-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <div class="game-image-swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_1.jpg" alt="Battlefield" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_2.jpg" alt="Battlefield" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_3.jpg" alt="Battlefield" />
+                      </div>
+                    </div>
+                                         <div class="game-image-pagination"></div>
+                   </div>
+                   <div class="platform-icons">
+                     <img src="/assets/images/mini-steam.svg" alt="Steam" />
+                     <img src="/assets/images/mini-sony.svg" alt="PlayStation" />
+                   </div>
+                 </div>
+                 <div class="game-info">
+                   <div class="game-price">
+                     <span class="current-price">2 588 ₽</span>
+                     <span class="discount-badge">-12%</span>
+                     <span class="original-price">2 580 ₽</span>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                   <h3 class="game-title">Battlefield</h3>
+                   <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                   <button class="add-to-cart-btn">В корзину</button>
+                 </div>
+               </div>
+             </div>
+
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <div class="game-image-swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_2.jpg" alt="Русь против Ящеров 2" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_1.jpg" alt="Русь против Ящеров 2" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/assets/images/game_3.jpg" alt="Русь против Ящеров 2" />
+                      </div>
+                    </div>
+                                         <div class="game-image-pagination"></div>
+                   </div>
+                   <div class="platform-icons">
+                     <img src="/assets/images/steam.svg" alt="Steam" />
+                     <img src="/assets/images/sony.png" alt="PlayStation" />
+                   </div>
+                 </div>
+                 <div class="game-info">
+                   <div class="game-price">
+                     <span class="current-price">2 588 ₽</span>
+                     <span class="discount-badge">-12%</span>
+                     <span class="original-price">2 580 ₽</span>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                   <h3 class="game-title">Русь против Ящеров 2</h3>
+                   <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                   <button class="add-to-cart-btn">В корзину</button>
+                 </div>
+               </div>
+             </div>
+
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <img src="/assets/images/game_2.jpg" alt="Русь против Ящеров 2" />
+                  <div class="platform-icons">
+                    <img src="/assets/images/steam.svg" alt="Steam" />
+                    <img src="/assets/images/sony.png" alt="PlayStation" />
+                  </div>
+                </div>
+                <div class="game-info">
+                  <div class="game-price">
+                    <span class="current-price">2 588 ₽</span>
+                    <span class="discount-badge">-12%</span>
+                    <span class="original-price">2 580 ₽</span>
+                  </div>
+                  <div class="bitcoin-price">≈0.000031235 BTC</div>
+                  <h3 class="game-title">Dune: Awakening</h3>
+                  <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                  <button class="add-to-cart-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <img src="/assets/images/game_2.jpg" alt="Русь против Ящеров 2" />
+                  <div class="platform-icons">
+                    <img src="/assets/images/steam.svg" alt="Steam" />
+                    <img src="/assets/images/sony.png" alt="PlayStation" />
+                  </div>
+                </div>
+                <div class="game-info">
+                  <div class="game-price">
+                    <span class="current-price">2 588 ₽</span>
+                    <span class="discount-badge">-12%</span>
+                    <span class="original-price">2 580 ₽</span>
+                  </div>
+                  <div class="bitcoin-price">≈0.000031235 BTC</div>
+                  <h3 class="game-title">Baldur's Gate III</h3>
+                  <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                  <button class="add-to-cart-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <img src="/assets/images/game_2.jpg" alt="Русь против Ящеров 2" />
+                  <div class="platform-icons">
+                    <img src="/assets/images/steam.svg" alt="Steam" />
+                    <img src="/assets/images/sony.png" alt="PlayStation" />
+                  </div>
+                </div>
+                <div class="game-info">
+                  <div class="game-price">
+                    <span class="current-price">2 588 ₽</span>
+                    <span class="discount-badge">-12%</span>
+                    <span class="original-price">2 580 ₽</span>
+                  </div>
+                  <div class="bitcoin-price">≈0.000031235 BTC</div>
+                  <h3 class="game-title">Dune: Awakening</h3>
+                  <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                  <button class="add-to-cart-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="game-card">
+                <div class="game-image">
+                  <img src="/assets/images/game_2.jpg" alt="Русь против Ящеров 2" />
+                  <div class="platform-icons">
+                    <img src="/assets/images/steam.svg" alt="Steam" />
+                    <img src="/assets/images/sony.png" alt="PlayStation" />
+                  </div>
+                </div>
+                <div class="game-info">
+                  <div class="game-price">
+                    <span class="current-price">2 588 ₽</span>
+                    <span class="discount-badge">-12%</span>
+                    <span class="original-price">2 580 ₽</span>
+                  </div>
+                  <div class="bitcoin-price">≈0.000031235 BTC</div>
+                  <h3 class="game-title">Dune: Awakening</h3>
+                  <div class="game-genres">Экшен, Шутер, Мультиплеер</div>
+                  <button class="add-to-cart-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="games-cta">
+          <button class="catalog-btn">
+            <span>Каталог игр Steam</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.90001 2.79201L11.1 8.00801L5.90001 13.208" stroke="white" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount-banner">
+      <div class="container">
+        <div class="banner-content">
+          <div class="banner-left">
+            <div class="banner-text">
+              <h2 class="banner-title">
+                Скидки до 
+                <span class="discount-highlight">85%</span>
+              </h2>
+              <p class="banner-subtitle">на игры в <span> историческом</span> сеттинге</p>
+              <p class="banner-description">Открывай новую главу каждый день!</p>
+            </div>
+            <button class="banner-btn">Посмотреть скидки</button>
+          </div>
+          <div class="banner-right">
+            <div class="banner-character">
+              <img src="/assets/images/obj banner.png" alt="Персонаж" class="character-img" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="genres-section">
+      <div class="container">
+        <div class="genres-header section-header">
+                      <h2 class="genres-title section-title">Популярные жанры</h2>
+            <div class="genres-count section-count">24</div>
+        </div>
+          <div class="wrapper">
+            
+         
+        <div class="genres-grid">
+          <div class="genre-card">
+            <div class="genre-icon">
+             <img src="/assets/images/icon_1.svg" alt="">
+            </div>
+            <h3 class="genre-name">Экшен</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_2.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Шутер</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_3.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">RPG</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_1.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Стратегия</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_4.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Симулятор</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_5.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Хоррор</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_6.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Приключения</h3>
+          </div>
+          
+          <div class="genre-card">
+            <div class="genre-icon">
+              <img src="/assets/images/icon_4.svg" alt="">
+
+            </div>
+            <h3 class="genre-name">Спорт</h3>
+          </div>
+        </div>
+
+        <div class="genres-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="genre-card">
+                <div class="genre-icon">
+                 <img src="/assets/images/icon_1.svg" alt="">
+                </div>
+                <h3 class="genre-name">Экшен</h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="genre-card">
+                <div class="genre-icon">
+                  <img src="/assets/images/icon_2.svg" alt="">
+                </div>
+                <h3 class="genre-name">Шутер</h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="genre-card">
+                <div class="genre-icon">
+                  <img src="/assets/images/icon_3.svg" alt="">
+                </div>
+                <h3 class="genre-name">RPG</h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="genre-card">
+                <div class="genre-icon">
+                  <img src="/assets/images/icon_4.svg" alt="">
+                </div>
+                <h3 class="genre-name">Стратегия</h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="genre-card">
+                <div class="genre-icon">
+                  <img src="/assets/images/icon_1.svg" alt="">
+                </div>
+                <h3 class="genre-name">Симулятор</h3>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="genres-cta">
+          <div class="genres-cta-content">
+            <h3 class="genres-cta-title">Еще больше жанров в каталоге</h3>
+            <button class="genres-cta-btn">
+              <span>Перейти</span>
+             
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <div class="features-wrapper">
+          
+     
+        <div class="features-header">
+          <h2 class="features-title">Играйте без ограничений!</h2>
+        </div>
+        <p class="features-description">Покупайте игры и подписки на любые платформы по низким ценам и пополняйте баланс выгодно на KeysStore!</p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_1.svg" alt="">
+            </div>
+            <h3 class="feature-title">Оперативная поддержка</h3>
+            <p class="feature-description">В случае возникновения проблем поможем решить возникшую проблему максимально оперативно</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_2.svg" alt="">  
+            </div>
+            <h3 class="feature-title">Удобная оплата и вывод</h3>
+            <p class="feature-description">Принимаем карты большинства банков, СБП, а также криптовалюты</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="/assets/images/play_off_3.svg" alt="">
+            </div>
+            <h3 class="feature-title">8 лет на рынке</h3>
+            <p class="feature-description">Создано геймерами для геймеров</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="currency-modal" id="currencyModal">
+      <div class="currency-modal-content">
+        <div class="currency-modal-header">
+          <h3 class="currency-modal-title">Выбор валюты сервиса</h3>
+          <button class="currency-modal-close" id="currencyModalClose">
+            <img src="/assets/images/close.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="currency-modal-body">
+          <div class="currency-section">
+            <h4 class="currency-section-title">ОСНОВНАЯ ВАЛЮТА</h4>
+            <div class="currency-options">
+              <button class="currency-option active">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.56616 14.4221V10.9191M6.56616 10.9191V8.00001M6.56616 10.9191H2.52026M6.56616 10.9191H11.19M6.56616 8.00001V1.57796H10.901C12.6567 1.57796 14.08 3.01558 14.08 4.78898C14.08 6.56238 12.6567 8.00001 10.901 8.00001H6.56616ZM6.56616 8.00001H2.52026"
+                    stroke="white"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="currency-name">Рубль</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="currency-section">
+            <h4 class="currency-section-title">КРИПТОВАЛЮТА</h4>
+            <div class="currency-options">
+              <button class="currency-option active">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.2957 5.01896C14.5559 4.36978 13.5326 3.37844 12.6991 2.67536L12.6498 2.64255C12.5678 2.57992 12.4752 2.53081 12.3761 2.49725C10.3664 2.14102 1.01339 0.479412 0.830914 0.500504C0.779784 0.50731 0.730911 0.524929 0.687894 0.552063L0.641043 0.587217C0.583352 0.642901 0.539536 0.710173 0.512818 0.784079L0.500488 0.814546V0.980941V1.00672C1.55341 3.79326 5.71086 12.9216 6.52953 15.0636C6.57885 15.2089 6.67255 15.4855 6.84763 15.4995H6.88708C6.98079 15.4995 7.38026 14.998 7.38026 14.998C7.38026 14.998 14.5214 6.76728 15.2439 5.89077C15.3374 5.78281 15.42 5.66667 15.4905 5.54392C15.5085 5.44788 15.5 5.34904 15.4659 5.25705C15.4317 5.16505 15.3731 5.08302 15.2957 5.01896ZM9.2124 5.97749L12.2602 3.5753L14.048 5.14082L9.2124 5.97749ZM8.02878 5.82047L2.78141 1.73324L11.2714 3.22142L8.02878 5.82047ZM8.50223 6.89149L13.8729 6.06889L7.73288 13.0997L8.50223 6.89149ZM2.06878 2.14102L7.58985 6.59385L6.79091 13.1044L2.06878 2.14102Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="currency-name">TRON</span>
+              </button>
+              <button class="currency-option">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.999 15.5452L3.36646 9.01883L7.999 11.7557L12.6335 9.01883L7.999 15.5452Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7.999 10.878L3.36646 8.14111L7.999 0.454803L12.6299 8.14111L7.999 10.878Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="currency-name">Ethereum</span>
+              </button>
+              <button class="currency-option">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9502 7.99999C11.7444 7.73384 11.5035 7.49882 11.2323 7.2996C11.0408 7.15952 10.8334 7.03657 10.6133 6.9354C10.6994 6.82956 10.7776 6.71594 10.8462 6.59921C11.0919 6.18676 11.2307 5.70894 11.2307 5.19843C11.2307 4.68793 11.0903 4.2101 10.8462 3.79765C10.5941 3.37275 10.2303 3.01789 9.79479 2.77197C9.57143 2.6459 9.33052 2.5494 9.07684 2.48403V0.996094H7.64094V2.39687H6.923V0.996094H5.4871V2.39687H3.33325V3.79765H4.0512V12.2023H3.33325V13.6031H5.4871V15.0039H6.923V13.6031H7.64094V15.0039H9.07684V13.6031C9.32254 13.6031 9.56345 13.5798 9.79479 13.5331C10.3245 13.4288 10.8127 13.2093 11.2307 12.9043C11.5019 12.7051 11.7444 12.4685 11.9486 12.2039C12.3986 11.6187 12.6666 10.8903 12.6666 10.1027C12.6666 9.31517 12.4001 8.5852 11.9502 7.99999ZM5.48869 3.79765H8.36049C8.62214 3.79765 8.86784 3.86613 9.07844 3.98598C9.50761 4.22722 9.79639 4.68014 9.79639 5.19843C9.79639 5.71672 9.50761 6.16964 9.07844 6.41088C8.86784 6.53073 8.62214 6.59921 8.36049 6.59921H5.48869V3.79765ZM9.79639 12.0825C9.57143 12.1603 9.33052 12.2023 9.07844 12.2023H5.48869V7.99999H9.07844C9.33052 7.99999 9.57143 8.04201 9.79639 8.11983C10.634 8.40933 11.2323 9.18754 11.2323 10.1012C11.2323 11.0148 10.634 11.7945 9.79639 12.0825Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="currency-name">Bitcoin</span>
+              </button>
+              <button class="currency-option">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_5009_17700)">
+                    <path
+                      d="M9.5224 8.52571V8.52368C9.43693 8.52975 8.99569 8.55604 8.01382 8.55604C7.22872 8.55604 6.67816 8.53379 6.48338 8.52368V8.52571C3.46423 8.39021 1.21229 7.8563 1.21229 7.21521C1.21229 6.57614 3.46622 6.04021 6.48338 5.90471V7.99382C6.68015 8.00798 7.24661 8.04236 8.02773 8.04236C8.96587 8.04236 9.43495 8.00191 9.5224 7.99382V5.90673C12.5356 6.04425 14.7816 6.57816 14.7816 7.21723C14.7816 7.8563 12.5336 8.39021 9.5224 8.52773M9.5224 5.69034V3.82166H13.7262V0.972137H2.28161V3.82166H6.48536V5.69034C3.0687 5.8501 0.500732 6.53771 0.500732 7.36284C0.500732 8.18797 3.07068 8.87558 6.48536 9.03737V15.0276H9.52439V9.03737C12.9351 8.87763 15.4991 8.19002 15.4991 7.36489C15.4991 6.54179 12.9351 5.85216 9.52439 5.69236"
+                      fill="white"
+                    />
+                    <path
+                      d="M12.7335 14.9482L10.3647 11.3618L12.7335 12.8658L15.1033 11.3618L12.7335 14.9482Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12.7335 12.3835L10.3647 10.8795L12.7335 6.65576L15.1014 10.8795L12.7335 12.3835Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5009_25241">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="currency-name">Tether ERC-20</span>
+              </button>
+              <button class="currency-option">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_5009_11964)">
+                    <path
+                      d="M9.5224 8.52574V8.52371C9.43693 8.52978 8.99569 8.55607 8.01382 8.55607C7.22872 8.55607 6.67816 8.53383 6.48338 8.52371V8.52574C3.46423 8.39024 1.21229 7.85633 1.21229 7.21524C1.21229 6.57617 3.46622 6.04024 6.48338 5.90474V7.99385C6.68015 8.00801 7.24661 8.04239 8.02773 8.04239C8.96587 8.04239 9.43495 8.00194 9.5224 7.99385V5.90676C12.5356 6.04428 14.7816 6.57819 14.7816 7.21726C14.7816 7.85633 12.5336 8.39024 9.5224 8.52776M9.5224 5.69037V3.82169H13.7262V0.972168H2.28161V3.82169H6.48536V5.69037C3.0687 5.85013 0.500732 6.53774 0.500732 7.36287C0.500732 8.188 3.07068 8.87561 6.48536 9.0374V15.0277H9.52439V9.0374C12.9351 8.87763 15.4991 8.19002 15.4991 7.36489C15.4991 6.54179 12.9351 5.85216 9.52439 5.69239"
+                      fill="white"
+                    />
+                    <path
+                      d="M15.9148 10.6507C15.6058 10.3796 15.1784 9.96555 14.8304 9.67192L14.8098 9.65822C14.7755 9.63206 14.7369 9.61155 14.6955 9.59753C13.8562 9.44876 9.95004 8.75482 9.87384 8.76363C9.85248 8.76648 9.83207 8.77383 9.81411 8.78517L9.79454 8.79985C9.77045 8.8231 9.75215 8.8512 9.74099 8.88206L9.73584 8.89479V8.96428V8.97504C10.1756 10.1388 11.9119 13.951 12.2538 14.8456C12.2743 14.9063 12.3135 15.0218 12.3866 15.0277H12.4031C12.4422 15.0277 12.609 14.8182 12.609 14.8182C12.609 14.8182 15.5914 11.3808 15.8931 11.0148C15.9322 10.9697 15.9667 10.9212 15.9961 10.8699C16.0036 10.8298 16.0001 10.7885 15.9858 10.7501C15.9716 10.7117 15.9471 10.6774 15.9148 10.6507ZM13.3742 11.051L14.6471 10.0478L15.3937 10.7016L13.3742 11.051ZM12.8799 10.9854L10.6884 9.27846L14.2341 9.89997L12.8799 10.9854ZM13.0776 11.4327L15.3206 11.0892L12.7563 14.0254L13.0776 11.4327ZM10.3908 9.44876L12.6966 11.3084L12.3629 14.0274L10.3908 9.44876Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5009_11964">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="currency-name">Tether TRC-20</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-banner-content">
+        <p class="cookie-text">
+          Нажимая кнопку, вы соглашаетесь на сохранение файлов cookie на вашем
+          устройстве для улучшения навигации по сайту, анализа использования
+          сайта и содействия нашим маркетинговым усилиям.
+        </p>
+        <button class="cookie-accept-btn" id="cookieAcceptBtn">
+          Принять все Cookie
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-column">
+              <h3 class="footer-title">Игры Steam</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Игры Playstation</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+                <li><a href="#" class="footer-link">Симуляторы</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Онлайн-сервисы</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Пополнение Steam</a></li>
+                <li><a href="#" class="footer-link">Playstation Plus</a></li>
+                <li><a href="#" class="footer-link">Netflix</a></li>
+                <li><a href="#" class="footer-link">Пакет Adobe</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-title">Обмен предметов</h3>
+              <ul class="footer-links">
+                <li><a href="#" class="footer-link">Купить предметы</a></li>
+                <li><a href="#" class="footer-link">Продать предметы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-middle">
+        <div class="container">
+          <div class="footer-links-row">
+            <a href="#" class="footer-link">Связаться с нами</a>
+            <a href="#" class="footer-link">Правила</a>
+            <a href="#" class="footer-link">Политика конфиденциальности</a>
+            <a href="mailto:support@keys-store.com" class="footer-link">support@keys-store.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-copyright">
+            <p>&copy; 2025 keys-store.com</p>
+            <p>Saturia Limited, Office A, 16/F, Heng Shan Centre, 145 Queen's Road East, Wan Chai, HK</p>
+          </div>
+          <div class="footer-payment">
+            <div class="payment-methods">
+              <img src="/assets/images/bitcoin.svg" alt="Bitcoin" class="payment-icon" />
+              <img src="/assets/images/eth.svg" alt="Ethereum" class="payment-icon" />
+              <img src="/assets/images/tether 3.svg" alt="Tether" class="payment-icon" />
+              <img src="/assets/images/SPB.svg" alt="СБП" class="payment-icon" />
+              <img src="/assets/images/visa.svg" alt="Visa" class="payment-icon" />
+              <img src="/assets/images/mastercard.svg" alt="Mastercard" class="payment-icon" />
+              <img src="/assets/images/Sber.svg" alt="Сбербанк" class="payment-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>

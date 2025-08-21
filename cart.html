@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина - KEYS STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="logo">
+            <div class="logo-icons">
+              <img src="/assets/images/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <img src="/assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Быстрый поиск"
+              class="search-input"
+            />
+            <span class="search-enter-btn">ENTER</span>
+          </div>
+
+          <div class="header-actions">
+            <div class="action-item">
+              <div class="cart-wrapper">
+                <img src="/assets/images/cart.svg" alt="" class="action-icon" />
+                <span class="cart-count">3</span>
+              </div>
+              <span class="action-text">Корзина</span>
+            </div>
+            <div class="action-item">
+              <img src="/assets/images/login.svg" alt="" class="action-icon" />
+              <span class="action-text">Войти</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <a href="#" class="nav-link">Маркет скинов</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <div class="container">
+        <div class="cart-content">
+          <div class="cart-content-header">
+            <div class="cart-header">
+              <div class="cart-title-section">
+                <h1 class="cart-title">Корзина</h1>
+                <span class="cart-items-count">1 товар</span>
+              </div>
+              <button class="clear-cart-btn">Удалить все</button>
+            </div>
+
+            <div class="cart-tabs">
+              <button class="cart-tab active">
+                <span>ИГРЫ</span>
+                <span class="tab-count">4</span>
+              </button>
+              <button class="cart-tab">
+                <span>ОБМЕН ПРЕДМЕТОВ</span>
+                <span class="tab-count">12</span>
+              </button>
+              <button class="cart-tab">
+                <span>ПОДПИСКИ</span>
+                <span class="tab-count">12</span>
+              </button>
+            </div>
+                   
+              <div class="cart-tab-contents" id="games-tab">
+                <div class="cart-items cart-tab-content active">
+               <div class="cart-item">
+                 <div class="item-product">
+                   <div class="item-image">
+                     <img
+                       src="/assets/images/game_1.jpg"
+                       alt="Русы против ящеров 2"
+                     />
+                   </div>
+                   <div class="item-info">
+                     <h3 class="item-title">Русы против ящеров 2</h3>
+                     <p class="item-genres">Экшен, Шутер, Мультиплеер</p>
+                   </div>
+                 </div>
+                 <div class="item-tags">
+                   <span class="item-tag">РФ и страны СНГ</span>
+                   <span class="item-tag">Steam</span>
+                 </div>
+                 <div class="item-price">
+                   <div class="price-info">
+                     <div class="current-price">2 588 ₽</div>
+                     <div class="discount-badge">-12%</div>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                 </div>
+                 <div class="item-quantity">
+                   <button class="quantity-btn minus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path d="M4.8 8H11.2" stroke="white" stroke-width="2" />
+                     </svg>
+                   </button>
+                   <span class="quantity">2</span>
+                   <button class="quantity-btn plus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path
+                         d="M8 4.8V11.2M4.8 8H11.2"
+                         stroke="white"
+                         stroke-width="2"
+                       />
+                     </svg>
+                   </button>
+                 </div>
+               </div>
+
+               <div class="cart-item">
+                 <div class="item-product">
+                   <div class="item-image">
+                     <img
+                       src="/assets/images/game_2.jpg"
+                       alt="Русы против ящеров 2"
+                     />
+                   </div>
+                   <div class="item-info">
+                     <h3 class="item-title">Русы против ящеров 2</h3>
+                     <p class="item-genres">Экшен, Шутер, Мультиплеер</p>
+                   </div>
+                 </div>
+                 <div class="item-tags">
+                   <span class="item-tag">РФ и страны СНГ</span>
+                   <span class="item-tag">Steam</span>
+                 </div>
+                 <div class="item-price">
+                   <div class="price-info">
+                     <div class="current-price">2 588 ₽</div>
+                     <div class="discount-badge">-12%</div>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                 </div>
+                 <div class="item-quantity">
+                   <button class="quantity-btn minus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path d="M4.8 8H11.2" stroke="white" stroke-width="2" />
+                     </svg>
+                   </button>
+                   <span class="quantity">2</span>
+                   <button class="quantity-btn plus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path
+                         d="M8 4.8V11.2M4.8 8H11.2"
+                         stroke="white"
+                         stroke-width="2"
+                       />
+                     </svg>
+                   </button>
+                 </div>
+               </div>
+
+               <div class="cart-item">
+                 <div class="item-product">
+                   <div class="item-image">
+                     <img
+                       src="/assets/images/game_3.jpg"
+                       alt="Русы против ящеров 2"
+                     />
+                   </div>
+                   <div class="item-info">
+                     <h3 class="item-title">Русы против ящеров 2</h3>
+                     <p class="item-genres">Экшен, Шутер, Мультиплеер</p>
+                   </div>
+                 </div>
+                 <div class="item-tags">
+                   <span class="item-tag">РФ и страны СНГ</span>
+                   <span class="item-tag">Steam</span>
+                 </div>
+                 <div class="item-price">
+                   <div class="price-info">
+                     <div class="current-price">2 588 ₽</div>
+                     <div class="discount-badge">-12%</div>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                 </div>
+                 <div class="item-quantity">
+                   <button class="quantity-btn minus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path d="M4.8 8H11.2" stroke="white" stroke-width="2" />
+                     </svg>
+                   </button>
+                   <span class="quantity">2</span>
+                   <button class="quantity-btn plus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path
+                         d="M8 4.8V11.2M4.8 8H11.2"
+                         stroke="white"
+                         stroke-width="2"
+                       />
+                     </svg>
+                   </button>
+                 </div>
+               </div>
+
+               <div class="cart-item">
+                 <div class="item-product">
+                   <div class="item-image">
+                     <img
+                       src="/assets/images/game_1.jpg"
+                       alt="Русы против ящеров 2"
+                     />
+                   </div>
+                   <div class="item-info">
+                     <h3 class="item-title">Русы против ящеров 2</h3>
+                     <p class="item-genres">Экшен, Шутер, Мультиплеер</p>
+                   </div>
+                 </div>
+                 <div class="item-tags">
+                   <span class="item-tag">РФ и страны СНГ</span>
+                   <span class="item-tag">Steam</span>
+                 </div>
+                 <div class="item-price">
+                   <div class="price-info">
+                     <div class="current-price">2 588 ₽</div>
+                     <div class="discount-badge">-12%</div>
+                   </div>
+                   <div class="bitcoin-price">≈0.000031235 BTC</div>
+                 </div>
+                 <div class="item-quantity">
+                   <button class="quantity-btn minus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path d="M4.8 8H11.2" stroke="white" stroke-width="2" />
+                     </svg>
+                   </button>
+                   <span class="quantity">2</span>
+                   <button class="quantity-btn plus">
+                     <svg
+                       width="16"
+                       height="16"
+                       viewBox="0 0 16 16"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg"
+                     >
+                       <path
+                         d="M8 4.8V11.2M4.8 8H11.2"
+                         stroke="white"
+                         stroke-width="2"
+                       />
+                     </svg>
+                   </button>
+                 </div>
+               </div>
+             </div>
+
+                           <div class="cart-tab-content" id="items-tab">
+               <div class="market-items-grid">
+                 <div class="market-item">
+                   <div class="market-item-header">
+                     <div class="item-rarity">
+                       <div class="rarity-indicator"></div>
+                       <div class="item-stats">
+                         <span class="stattrak">ST</span>
+                         <span class="separator">/</span>
+                         <span class="wear">FN</span>
+                         <span class="separator">/</span>
+                         <span class="float">0.055821</span>
+                       </div>
+                     </div>
+                     <span class="market-item-quantity">x212</span>
+                   </div>
+                   <div class="market-item-image">
+                     <img src="/assets/images/cs2-skin-1.jpg" alt="M4A1-S | Black Lotus" />
+                     <div class="item-stickers">
+                       <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" />
+                     </div>
+                   </div>
+                   <div class="market-item-info">
+                     <h3 class="market-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                     <div class="market-item-price">
+                       <div class="price-row">
+                         <span class="price">902.74 ₽</span>
+                         <span class="discount">-15%</span>
+                       </div>
+                       <div class="status-indicator">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM8 12C5.79086 12 4 10.2091 4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12Z" fill="white"/>
+                           <path d="M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z" fill="white"/>
+                         </svg>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="market-item-actions">
+                     <button class="market-quantity-btn minus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                     <span class="market-quantity">2</span>
+                     <button class="market-quantity-btn plus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 4.8V11.2M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                   </div>
+                 </div>
+
+                 <div class="market-item">
+                   <div class="market-item-header">
+                     <div class="item-rarity">
+                       <div class="rarity-indicator"></div>
+                       <div class="item-stats">
+                         <span class="stattrak">ST</span>
+                         <span class="separator">/</span>
+                         <span class="wear">FN</span>
+                         <span class="separator">/</span>
+                         <span class="float">0.055821</span>
+                       </div>
+                     </div>
+                     <span class="market-item-quantity">x212</span>
+                   </div>
+                   <div class="market-item-image">
+                     <img src="/assets/images/cs2-skin-1.jpg" alt="M4A1-S | Black Lotus" />
+                     <div class="item-stickers">
+                       <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" />
+                     </div>
+                   </div>
+                   <div class="market-item-info">
+                     <h3 class="market-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                     <div class="market-item-price">
+                       <div class="price-row">
+                         <span class="price">902.74 ₽</span>
+                         <span class="discount">-15%</span>
+                       </div>
+                       <div class="status-indicator">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM8 12C5.79086 12 4 10.2091 4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12Z" fill="white"/>
+                           <path d="M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z" fill="white"/>
+                         </svg>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="market-item-actions">
+                     <button class="market-quantity-btn minus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                     <span class="market-quantity">2</span>
+                     <button class="market-quantity-btn plus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 4.8V11.2M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                   </div>
+                 </div>
+
+                 <div class="market-item">
+                   <div class="market-item-header">
+                     <div class="item-rarity">
+                       <div class="rarity-indicator"></div>
+                       <div class="item-stats">
+                         <span class="stattrak">ST</span>
+                         <span class="separator">/</span>
+                         <span class="wear">FN</span>
+                         <span class="separator">/</span>
+                         <span class="float">0.055821</span>
+                       </div>
+                     </div>
+                     <span class="market-item-quantity">x212</span>
+                   </div>
+                   <div class="market-item-image">
+                     <img src="/assets/images/cs2-skin-1.jpg" alt="M4A1-S | Black Lotus" />
+                     <div class="item-stickers">
+                       <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" />
+                     </div>
+                   </div>
+                   <div class="market-item-info">
+                     <h3 class="market-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                     <div class="market-item-price">
+                       <div class="price-row">
+                         <span class="price">902.74 ₽</span>
+                         <span class="discount">-15%</span>
+                       </div>
+                       <div class="status-indicator">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM8 12C5.79086 12 4 10.2091 4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12Z" fill="white"/>
+                           <path d="M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z" fill="white"/>
+                         </svg>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="market-item-actions">
+                     <button class="market-quantity-btn minus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                     <span class="market-quantity">2</span>
+                     <button class="market-quantity-btn plus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 4.8V11.2M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                   </div>
+                 </div>
+
+                 <div class="market-item">
+                   <div class="market-item-header">
+                     <div class="item-rarity">
+                       <div class="rarity-indicator"></div>
+                       <div class="item-stats">
+                         <span class="stattrak">ST</span>
+                         <span class="separator">/</span>
+                         <span class="wear">FN</span>
+                         <span class="separator">/</span>
+                         <span class="float">0.055821</span>
+                       </div>
+                     </div>
+                     <span class="market-item-quantity">x212</span>
+                   </div>
+                   <div class="market-item-image">
+                     <img src="/assets/images/cs2-skin-1.jpg" alt="M4A1-S | Black Lotus" />
+                     <div class="item-stickers">
+                       <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" />
+                     </div>
+                   </div>
+                   <div class="market-item-info">
+                     <h3 class="market-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                     <div class="market-item-price">
+                       <div class="price-row">
+                         <span class="price">902.74 ₽</span>
+                         <span class="discount">-15%</span>
+                       </div>
+                       <div class="status-indicator">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM8 12C5.79086 12 4 10.2091 4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12Z" fill="white"/>
+                           <path d="M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z" fill="white"/>
+                         </svg>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="market-item-actions">
+                     <button class="market-quantity-btn minus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                     <span class="market-quantity">2</span>
+                     <button class="market-quantity-btn plus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 4.8V11.2M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                   </div>
+                 </div>
+
+                 <div class="market-item">
+                   <div class="market-item-header">
+                     <div class="item-rarity">
+                       <div class="rarity-indicator"></div>
+                       <div class="item-stats">
+                         <span class="stattrak">ST</span>
+                         <span class="separator">/</span>
+                         <span class="wear">FN</span>
+                         <span class="separator">/</span>
+                         <span class="float">0.055821</span>
+                       </div>
+                     </div>
+                     <span class="market-item-quantity">x212</span>
+                   </div>
+                   <div class="market-item-image">
+                     <img src="/assets/images/cs2-skin-1.jpg" alt="M4A1-S | Black Lotus" />
+                     <div class="item-stickers">
+                       <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" />
+                     </div>
+                   </div>
+                   <div class="market-item-info">
+                     <h3 class="market-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                     <div class="market-item-price">
+                       <div class="price-row">
+                         <span class="price">902.74 ₽</span>
+                         <span class="discount">-15%</span>
+                       </div>
+                       <div class="status-indicator">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM8 12C5.79086 12 4 10.2091 4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12Z" fill="white"/>
+                           <path d="M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z" fill="white"/>
+                         </svg>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="market-item-actions">
+                     <button class="market-quantity-btn minus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                     <span class="market-quantity">2</span>
+                     <button class="market-quantity-btn plus">
+                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M8 4.8V11.2M4.8 8H11.2" stroke="#A4F40F" stroke-width="2"/>
+                       </svg>
+                     </button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+                           <div class="cart-tab-content" id="subscriptions-tab">
+               <div class="subscription-items">
+                 <div class="subscription-item">
+                   <div class="subscription-product">
+                     <img src="/assets/images/netflix-logo.svg" alt="Netflix" class="subscription-logo" />
+                     <div class="subscription-info">
+                       <h3 class="subscription-title">Подписка Netflix на 12 лет</h3>
+                       <p class="subscription-category">Подписки</p>
+                     </div>
+                   </div>
+                   <div class="subscription-actions">
+                     <div class="subscription-price">
+                       <div class="price-row">
+                         <span class="current-price">2 588 ₽</span>
+                         <span class="discount-badge">-12%</span>
+                       </div>
+                       <div class="bitcoin-price">≈0.000031235 BTC</div>
+                     </div>
+                     <div class="subscription-buttons">
+                       <button class="action-btn edit-btn">
+                         <img src="/assets/images/edit-icon.svg" alt="Редактировать" />
+                       </button>
+                       <button class="action-btn delete-btn">
+                         <img src="/assets/images/delete-icon.svg" alt="Удалить" />
+                       </button>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="subscription-item">
+                   <div class="subscription-product">
+                     <img src="/assets/images/playstation-plus-logo.svg" alt="PlayStation Plus" class="subscription-logo" />
+                     <div class="subscription-info">
+                       <h3 class="subscription-title">Подписка Play Station Plus на 6 минут</h3>
+                       <p class="subscription-category">Подписки</p>
+                     </div>
+                   </div>
+                   <div class="subscription-actions">
+                     <div class="subscription-price">
+                       <div class="price-row">
+                         <span class="current-price">2 588 ₽</span>
+                         <span class="discount-badge">-12%</span>
+                       </div>
+                       <div class="bitcoin-price">≈0.000031235 BTC</div>
+                     </div>
+                     <div class="subscription-buttons">
+                       <button class="action-btn edit-btn">
+                         <img src="/assets/images/edit-icon.svg" alt="Редактировать" />
+                       </button>
+                       <button class="action-btn delete-btn">
+                         <img src="/assets/images/delete-icon.svg" alt="Удалить" />
+                       </button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+          <div class="cart-sidebar">
+            <div class="sidebar-content" id="games-sidebar">
+              <div class="order-summary">
+                <div class="summary-header">
+                  <div class="order-title">
+                    <span class="order-label">Ваш заказ</span>
+                    <div class="order-count">
+                      <span class="count-text">99 товаров</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="summary-details">
+                  <div class="summary-row">
+                    <span class="summary-label">Сумма сделки</span>
+                    <span class="summary-value">18 321 ₽</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Комиссия 3%</span>
+                    <span class="summary-value">214 ₽</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Расходы провайдера на конвертацию</span>
+                    <span class="summary-value">8.9 ₽</span>
+                  </div>
+                </div>
+
+                <div class="summary-total">
+                  <span class="total-label">Итого</span>
+                  <div class="total-price">
+                    <span class="total-amount">27 152 ₽</span>
+                    <span class="total-bitcoin">≈0.000031235 BTC</span>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="payment-methods">
+                <div class="payment-tabs">
+                  <button class="payment-tab active">Рублями</button>
+                  <button class="payment-tab">Криптой</button>
+                </div>
+
+                <div class="payment-options">
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/spb.svg" alt="СПБ" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option selected">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                      <div class="checkmark">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2 6L5 9L10 3"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img
+                        src="/assets/images/tether-trc20.svg"
+                        alt="Tether TRC-20"
+                      />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img
+                        src="/assets/images/tether-bep20.svg"
+                        alt="Tether BEP-20"
+                      />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                  </div>
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/spb.svg" alt="СПБ" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="checkout-btn">
+                  Перейти к оплате
+                </button>
+              </div>
+              
+            </div>
+
+            <div class="sidebar-content" id="items-sidebar" style="display: none;">
+              <div class="steam-login-block">
+                <div class="steam-login-content">
+                  <p class="steam-login-text">Для продолжения войдите в свой профиль Steam</p>
+                  <button class="steam-login-btn">
+                    <img src="/assets/images/steam.svg" alt="Steam" />
+                    <span>Войти через Steam</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="order-summary">
+                <div class="summary-header">
+                  <div class="order-title">
+                    <span class="order-label">Ваш заказ</span>
+                    <div class="order-count">
+                      <span class="count-text">99 товаров</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="summary-total">
+                  <span class="total-label">Итого</span>
+                  <div class="total-price">
+                    <span class="total-amount">27 152 ₽</span>
+                    <span class="total-bitcoin">≈0.000031235 BTC</span>
+                  </div>
+                </div>
+
+                <button class="checkout-btn disabled">
+                  Перейти к оплате
+                </button>
+              </div>
+            </div>
+
+            <div class="sidebar-content" id="subscriptions-sidebar" style="display: none;">
+              <div class="order-summary">
+                <div class="summary-header">
+                  <div class="order-title">
+                    <span class="order-label">Ваш заказ</span>
+                    <div class="order-count">
+                      <span class="count-text">99 товаров</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="summary-details">
+                  <div class="summary-row">
+                    <span class="summary-label">Сумма сделки</span>
+                    <span class="summary-value">18 321 ₽</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Комиссия 3%</span>
+                    <span class="summary-value">214 ₽</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label">Расходы провайдера на конвертацию</span>
+                    <span class="summary-value">8.9 ₽</span>
+                  </div>
+                </div>
+
+                <div class="summary-total">
+                  <span class="total-label">Итого</span>
+                  <div class="total-price">
+                    <span class="total-amount">27 152 ₽</span>
+                    <span class="total-bitcoin">≈0.000031235 BTC</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-methods">
+                <div class="payment-tabs">
+                  <button class="payment-tab active">Рублями</button>
+                  <button class="payment-tab">Криптой</button>
+                </div>
+
+                <div class="payment-options">
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/spb.svg" alt="СПБ" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option selected">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                      <div class="checkmark">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2 6L5 9L10 3"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img
+                        src="/assets/images/tether-trc20.svg"
+                        alt="Tether TRC-20"
+                      />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img
+                        src="/assets/images/tether-bep20.svg"
+                        alt="Tether BEP-20"
+                      />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                  </div>
+                  <div class="payment-options-row">
+                    <div class="payment-option">
+                      <img src="/assets/images/spb.svg" alt="СПБ" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                    <div class="payment-option">
+                      <img src="/assets/images/paypal.svg" alt="PayPal" />
+                      <span class="commission">Комиссия 3%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="terms-text">
+              Нажимая на кнопку, вы соглашаетесь с
+              <a href="#">Правилами покупки</a>, а также с
+              <a href="#">Политикой конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
