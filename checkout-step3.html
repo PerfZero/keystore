@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оценка - KEYS STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/checkout.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+                         <a href="#" class="mobile-logo">
+               <img src="assets/images/logo.svg" alt="KEYS STORE" />
+             </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+                     <div class="logo">
+             <div class="logo-icons">
+               <img src="assets/images/logo.svg" alt="" />
+             </div>
+           </div>
+
+           <div class="search-bar">
+             <img src="assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Быстрый поиск"
+              class="search-input"
+            />
+            <span class="search-enter-btn">ENTER</span>
+          </div>
+
+          <div class="header-actions">
+                         <div class="action-item">
+               <div class="cart-wrapper">
+                 <img src="assets/images/cart.svg" alt="" class="action-icon" />
+                 <span class="cart-count">3</span>
+               </div>
+               <span class="action-text">Корзина</span>
+             </div>
+             <div class="action-item">
+               <img src="assets/images/login.svg" alt="" class="action-icon" />
+               <span class="action-text">Войти</span>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <a href="#" class="nav-link">Маркет скинов</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumb-link">Главная</a>
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+            <path d="M2.7 1.4L5.3 4L2.7 6.6" stroke="#71717D" stroke-width="1"/>
+          </svg>
+          <span class="breadcrumb-current">Оценка сервиса</span>
+        </div>
+
+        <div class="checkout-steps">
+          <div class="step completed">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 1.</span>
+              <span class="step-text">Счёт выставлен</span>
+            </div>
+          </div>
+          <div class="step completed">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 2.</span>
+              <span class="step-text">Обмен отправлен</span>
+            </div>
+          </div>
+          <div class="step active">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 3.</span>
+              <span class="step-text">Завершение сделки</span>
+            </div>
+          </div>
+        </div>
+
+                 <div class="checkout-content">
+           <div class="checkout-left">
+             <div class="step3-rating-card step3-state-rating">
+               <div class="step3-rating-header">
+                 <h1 class="step3-rating-title">Оцените качество нашего сервиса</h1>
+                 <p class="step3-rating-description">
+                   Мы постоянно улучшаем наш сервис. Если Вас затронули неисправности в нашем сервисе или у Вас есть конструктивная критика, мы будем рады ответить на все вопросы, и помочь в любой ситукции.
+                 </p>
+               </div>
+
+               <div class="step3-rating-section">
+                 <div class="step3-stars-section">
+                   <div class="step3-stars">
+                     <div class="step3-star active" onclick="setRating(1)">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                         <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                       </svg>
+                     </div>
+                     <div class="step3-star active" onclick="setRating(2)">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                         <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                       </svg>
+                     </div>
+                     <div class="step3-star active" onclick="setRating(3)">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                         <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                       </svg>
+                     </div>
+                     <div class="step3-star active" onclick="setRating(4)">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                         <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                       </svg>
+                     </div>
+                     <div class="step3-star" onclick="setRating(5)">
+                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                         <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#3D3D4A"/>
+                       </svg>
+                     </div>
+                   </div>
+                   <p class="step3-rating-text">Мне понравилось, но есть над чем поработать!</p>
+                 </div>
+
+                 <div class="step3-comment-input">
+                   <textarea placeholder="Ваш комментарий..." class="step3-comment-field"></textarea>
+                 </div>
+
+                 <button class="step3-submit-btn" onclick="submitRating()">
+                   <span>Отправить</span>
+                 </button>
+               </div>
+             </div>
+
+             <div class="step3-rating-card step3-state-thanks" style="display: none;">
+               <div class="step3-thanks-header">
+                 <h1 class="step3-thanks-title">Спасибо за отзыв!</h1>
+               </div>
+
+               <div class="step3-thanks-section">
+                 <div class="step3-thanks-stars">
+                   <div class="step3-star active">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                       <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                     </svg>
+                   </div>
+                   <div class="step3-star active">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                       <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                     </svg>
+                   </div>
+                   <div class="step3-star active">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                       <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                     </svg>
+                   </div>
+                   <div class="step3-star active">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                       <path d="M16 2L20.47 10.26L30 11.27L23 17.77L25.18 27.02L16 22.77L6.82 27.02L9 17.77L2 11.27L11.53 10.26L16 2Z" fill="#F4E50F"/>
+                     </svg>
+                   </div>
+                 </div>
+
+                 <button class="step3-home-btn" onclick="goHome()">
+                   <span>Вернуться на главную</span>
+                 </button>
+               </div>
+             </div>
+           </div>
+
+          <div class="checkout-right">
+            <div class="step3-support-card">
+              <div class="step3-support-header">
+                <h3 class="step3-support-title">Столкнулись с проблемой?</h3>
+                <p class="step3-support-description">
+                  Сделка была отменена в Steam. Если вы этого не делали, свяжитесь с поддержкой через Telegram.
+                </p>
+              </div>
+
+              <div class="step3-deal-info">
+                <div class="step3-deal-item">
+                  <span class="step3-deal-label">Номер сделки</span>
+                  <div class="step3-deal-value">
+                    <span class="step3-deal-number">#723193</span>
+                    <img src="assets/images/copy.svg" alt="Копировать" width="16" height="16" class="step3-copy-icon" onclick="copyDealNumber()">
+                  </div>
+                </div>
+                <div class="step3-deal-item">
+                  <span class="step3-deal-label">Сумма сделки</span>
+                  <span class="step3-deal-amount">32 115 ₽</span>
+                </div>
+              </div>
+
+              <button class="step3-telegram-btn">
+                <img src="assets/images/telegram.svg" alt="Telegram" width="20" height="20">
+                <span>Написать нам</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/checkout.js"></script>
+  </body>
+</html>

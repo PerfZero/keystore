@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата - KEYS STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/checkout.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="logo">
+            <div class="logo-icons">
+              <img src="/assets/images/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <img src="/assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Быстрый поиск"
+              class="search-input"
+            />
+            <span class="search-enter-btn">ENTER</span>
+          </div>
+
+          <div class="header-actions">
+            <div class="action-item">
+              <div class="cart-wrapper">
+                <img src="/assets/images/cart.svg" alt="" class="action-icon" />
+                <span class="cart-count">3</span>
+              </div>
+              <span class="action-text">Корзина</span>
+            </div>
+            <div class="action-item">
+              <img src="/assets/images/login.svg" alt="" class="action-icon" />
+              <span class="action-text">Войти</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <a href="#" class="nav-link">Маркет скинов</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumb-link">Главная</a>
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+            <path d="M2.7 1.4L5.3 4L2.7 6.6" stroke="#71717D" stroke-width="1"/>
+          </svg>
+          <span class="breadcrumb-current">Оплата - Tether (BEP-20)</span>
+        </div>
+
+        <div class="checkout-steps">
+          <div class="step active">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 1.</span>
+              <span class="step-text">Счёт выставлен</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 2.</span>
+              <span class="step-text">Обмен отправлен</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 3.</span>
+              <span class="step-text">Завершение сделки</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-content">
+          <div class="checkout-left checkout-state-payment">
+            <div class="payment-card">
+              <div class="payment-header">
+                <div class="payment-title-section">
+                  <h1 class="payment-title">Оплата через Tether BEP-20</h1>
+                  <div class="payment-timer">
+                    <span class="timer-text">24:56</span>
+                  </div>
+                </div>
+                <p class="payment-description">
+                  Следуйте инструкциям ниже для оплаты заказа.<br>
+                  Время на оплату ограничено, по истечению таймера заказ отменится автоматически.
+                </p>
+              </div>
+
+              <div class="payment-info">
+                <div class="info-row">
+                  <span class="info-label">Номер заказа</span>
+                  <span class="info-value">#8912351100</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Статус платежа</span>
+                  <div class="status-badge">
+                    <span class="status-text">Создан</span>
+                    <img src="assets/images/add_diamond.svg" alt="Статус" width="20" height="20">
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Сумма</span>
+                  <div class="amount-section">
+                    <span class="amount-value">2.28 USDT</span>
+                    <button class="copy-btn" data-copy="2.28">
+                      <img src="assets/images/content_copy.svg" alt="Копировать" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-instructions">
+                <div class="warning-box">
+                  <p class="warning-text">
+                    Важно, чтобы Вы выполнили перевод  <strong>  точной суммы с точностью до 8 знаков, </strong> иначе наша система не сможет распознать Ваш платеж!
+                  </p>
+                </div>
+                <div class="wallet-section">
+                  <div class="wallet-input">
+                    <span class="wallet-address">0x3123dsq421WDSAdash2131ry1ohi231g12u3t1123j2h3f</span>
+                  </div>
+                  <button class="refresh-btn">
+                    <img src="assets/images/content_copy_refresh.svg" alt="Обновить" width="20" height="20">
+                  </button>
+                </div>
+              </div>
+
+              <button class="check-payment-btn" onclick="checkPayment()">
+                <span>Проверить платёж</span>
+              </button>
+            </div>
+
+            <button class="report-error-btn">
+              <img src="assets/images/error_button_icon.svg" alt="Ошибка" width="16" height="16">
+              <span>Сообщить об ошибке</span>
+            </button>
+          </div>
+
+          <div class="checkout-left checkout-state-failed" style="display: none;">
+            <div class="payment-card payment-failed">
+              <div class="payment-header">
+                <div class="payment-title-section">
+                  <h1 class="payment-title">Оплата не получена</h1>
+                </div>
+                <p class="payment-description">
+                  Мы не получили оплату до истечения таймера, поэтому сделка была отменена.
+                </p>
+              </div>
+
+              <div class="payment-info">
+                <div class="info-row">
+                  <span class="info-label">Номер заказа</span>
+                  <span class="info-value">#8912351100</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Статус платежа</span>
+                  <div class="status-badge status-failed">
+                    <span class="status-text">Оплата не получена</span>
+                    <img src="assets/images/cross_icon_1.svg" alt="Ошибка" width="20" height="20">
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Сумма</span>
+                  <div class="amount-section">
+                    <span class="amount-value">2.28 USDT</span>
+                    <button class="copy-btn" data-copy="2.28">
+                      <img src="assets/images/content_copy.svg" alt="Копировать" width="20" height="20">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="check-payment-btn retry-btn" onclick="retryPayment()">
+                <span>Попробовать снова</span>
+              </button>
+            </div>
+
+            <button class="report-error-btn">
+              <img src="assets/images/error_button_icon.svg" alt="Ошибка" width="16" height="16">
+              <span>Сообщить об ошибке</span>
+            </button>
+          </div>
+
+          <div class="checkout-right checkout-state-payment">
+            <div class="checkout-order-summary">
+              <div class="checkout-summary-header">
+                <h3 class="checkout-summary-title">Ваш заказ</h3>
+                <span class="checkout-order-count">99 товаров</span>
+              </div>
+
+              <div class="checkout-order-items">
+                <div class="checkout-order-item">
+                  <div class="checkout-item-image">
+                    <img src="assets/images/skin_item_1.jpg" alt="M4A1-S | Black Lotus" />
+                  </div>
+                  <div class="checkout-item-details">
+                    <h4 class="checkout-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                    <div class="checkout-item-price">0.923213 USDT</div>
+                  </div>
+                  <span class="checkout-item-quantity">x1</span>
+                </div>
+                <div class="checkout-order-item">
+                  <div class="checkout-item-image">
+                    <img src="assets/images/skin_item_2.jpg" alt="M4A1-S | Black Lotus" />
+                  </div>
+                  <div class="checkout-item-details">
+                    <h4 class="checkout-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                    <div class="checkout-item-price">0.923213 USDT</div>
+                  </div>
+                  <span class="checkout-item-quantity">x1</span>
+                </div>
+                <div class="checkout-order-item">
+                  <div class="checkout-item-image">
+                    <img src="assets/images/skin_item_3.jpg" alt="M4A1-S | Black Lotus" />
+                  </div>
+                  <div class="checkout-item-details">
+                    <h4 class="checkout-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                    <div class="checkout-item-price">0.923213 USDT</div>
+                  </div>
+                  <span class="checkout-item-quantity">x1</span>
+                </div>
+                <div class="checkout-order-item">
+                  <div class="checkout-item-image">
+                    <img src="assets/images/skin_item_4.jpg" alt="M4A1-S | Black Lotus" />
+                  </div>
+                  <div class="checkout-item-details">
+                    <h4 class="checkout-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                    <div class="checkout-item-price">0.923213 USDT</div>
+                  </div>
+                  <span class="checkout-item-quantity">x1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-right checkout-state-failed" style="display: none;">
+            <div class="support-card">
+              <div class="support-header">
+                <h3 class="support-title">Столкнулись с проблемой?</h3>
+                <p class="support-description">
+                  Сделка была отменена в Steam. Если вы этого не делали, свяжитесь с поддержкой через Telegram.
+                </p>
+              </div>
+
+              <div class="support-info">
+                <div class="info-row">
+                  <span class="info-label">Номер сделки</span>
+                  <div class="deal-number-section">
+                    <span class="deal-number">#723193</span>
+                    <button class="copy-btn" data-copy="#723193">
+                      <img src="assets/images/content_copy.svg" alt="Копировать" width="16" height="16">
+                    </button>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Сумма сделки</span>
+                  <span class="deal-amount">32 115 ₽</span>
+                </div>
+              </div>
+
+              <button class="support-btn">
+                <img src="assets/images/telegram_button_icon.svg" alt="Telegram" width="20" height="20">
+                <span>Написать нам</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обмены - KEYS STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/checkout.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="logo">
+            <div class="logo-icons">
+              <img src="/assets/images/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <img src="/assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Быстрый поиск"
+              class="search-input"
+            />
+            <span class="search-enter-btn">ENTER</span>
+          </div>
+
+          <div class="header-actions">
+            <div class="action-item">
+              <div class="cart-wrapper">
+                <img src="/assets/images/cart.svg" alt="" class="action-icon" />
+                <span class="cart-count">3</span>
+              </div>
+              <span class="action-text">Корзина</span>
+            </div>
+            <div class="action-item">
+              <img src="/assets/images/login.svg" alt="" class="action-icon" />
+              <span class="action-text">Войти</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <a href="#" class="nav-link">Маркет скинов</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumb-link">Главная</a>
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+            <path d="M2.7 1.4L5.3 4L2.7 6.6" stroke="#71717D" stroke-width="1"/>
+          </svg>
+          <span class="breadcrumb-current">Обмены Steam</span>
+        </div>
+
+                 <div class="checkout-steps">
+           <div class="step completed">
+             <div class="step-indicator"></div>
+             <div class="step-content">
+               <span class="step-number">Шаг 1.</span>
+               <span class="step-text">Счёт выставлен</span>
+             </div>
+           </div>
+          <div class="step active">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 2.</span>
+              <span class="step-text">Обмен отправлен</span>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"></div>
+            <div class="step-content">
+              <span class="step-number">Шаг 3.</span>
+              <span class="step-text">Завершение сделки</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-content">
+          <div class="checkout-left">
+            <div class="payment-card">
+              <div class="payment-header">
+                <div class="payment-title-section">
+                  <h1 class="payment-title">Примите обмены</h1>
+                  <div class="payment-timer">
+                    <span class="timer-text">24:56</span>
+                  </div>
+                </div>
+                <p class="payment-description">
+                  Примите обмены от наших ботов пока время на таймере не истекло.
+                </p>
+              </div>
+
+                             <div class="step2-exchanges-section">
+                                   <div class="step2-exchange-item" onclick="toggleExchange(this)">
+                    <div class="step2-exchange-header">
+                      <div class="step2-exchange-info">
+                        <div class="step2-exchange-bot">
+                          <span class="step2-bot-name">[keysstoreBot_1]</span>
+                          <span class="step2-order-number">#8912351100</span>
+                        </div>
+                        <span class="step2-items-count">5 предметов</span>
+                      </div>
+                      <div class="step2-exchange-status step2-declined">
+                        <span class="step2-status-text">Обмен отклонен</span>
+                        <img src="assets/images/cross_icon_step2.svg" alt="Отклонен" width="12" height="12">
+                      </div>
+                      <img src="assets/images/chevron_down.svg" alt="Развернуть" class="step2-expand-icon">
+                    </div>
+                  </div>
+
+                  <div class="step2-exchange-item" onclick="toggleExchange(this)">
+                    <div class="step2-exchange-header">
+                      <div class="step2-exchange-info">
+                        <div class="step2-exchange-bot">
+                          <span class="step2-bot-name">[keysstoreBot_2]</span>
+                          <span class="step2-order-number">#8912351100</span>
+                        </div>
+                        <span class="step2-items-count">1 предмет</span>
+                      </div>
+                      <div class="step2-exchange-status step2-accepted">
+                        <span class="step2-status-text">Обмен принят</span>
+                        <img src="assets/images/check_icon_step2.svg" alt="Принят" width="12" height="12">
+                      </div>
+                      <img src="assets/images/chevron_down.svg" alt="Развернуть" class="step2-expand-icon">
+                    </div>
+                  </div>
+
+                                   <div class="step2-exchange-item step2-expanded" onclick="toggleExchange(this)">
+                    <div class="step2-exchange-header">
+                      <div class="step2-exchange-info">
+                        <div class="step2-exchange-bot">
+                          <span class="step2-bot-name">[keysstoreBot_3]</span>
+                          <span class="step2-order-number">#8912351100</span>
+                        </div>
+                        <span class="step2-items-count">4 предмета</span>
+                      </div>
+                      <div class="step2-exchange-status step2-pending">
+                        <span class="step2-status-text">Обмен отправлен</span>
+                        <img src="assets/images/link_icon_step2.svg" alt="Отправлен" width="12" height="12">
+                      </div>
+                      <img src="assets/images/chevron_down.svg" alt="Свернуть" class="step2-expand-icon step2-expanded">
+                    </div>
+                   
+                   <div class="step2-exchange-items">
+                     <div class="step2-exchange-item-detail">
+                       <div class="step2-item-image">
+                         <img src="assets/images/skin_item_step2.jpg" alt="M4A1-S | Black Lotus" />
+                       </div>
+                       <div class="step2-item-details">
+                         <h4 class="step2-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                         <div class="step2-item-price">0.923213 USDT</div>
+                       </div>
+                       <span class="step2-item-quantity">x1</span>
+                     </div>
+                     <div class="step2-exchange-item-detail">
+                       <div class="step2-item-image">
+                         <img src="assets/images/skin_item_step2.jpg" alt="M4A1-S | Black Lotus" />
+                       </div>
+                       <div class="step2-item-details">
+                         <h4 class="step2-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                         <div class="step2-item-price">0.923213 USDT</div>
+                       </div>
+                       <span class="step2-item-quantity">x1</span>
+                     </div>
+                     <div class="step2-exchange-item-detail">
+                       <div class="step2-item-image">
+                         <img src="assets/images/skin_item_step2.jpg" alt="M4A1-S | Black Lotus" />
+                       </div>
+                       <div class="step2-item-details">
+                         <h4 class="step2-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                         <div class="step2-item-price">0.923213 USDT</div>
+                       </div>
+                       <span class="step2-item-quantity">x1</span>
+                     </div>
+                     <div class="step2-exchange-item-detail">
+                       <div class="step2-item-image">
+                         <img src="assets/images/skin_item_step2.jpg" alt="M4A1-S | Black Lotus" />
+                       </div>
+                       <div class="step2-item-details">
+                         <h4 class="step2-item-title">M4A1-S | Black Lotus (Minimal Wear)</h4>
+                         <div class="step2-item-price">0.923213 USDT</div>
+                       </div>
+                       <span class="step2-item-quantity">x1</span>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+
+            <button class="report-error-btn">
+              <img src="assets/images/error_button_icon.svg" alt="Ошибка" width="16" height="16">
+              <span>Сообщить об ошибке</span>
+            </button>
+          </div>
+
+                     <div class="checkout-right">
+             <div class="step2-bot-info-card">
+               <div class="step2-bot-info-header">
+                 <h3 class="step2-bot-info-title">Информация о боте</h3>
+                 <p class="step2-bot-info-description">
+                   Примите обмены от наших ботов пока время на таймере не истекло.
+                 </p>
+               </div>
+
+               <div class="step2-bot-info-section">
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Бот для сделки</span>
+                   <span class="step2-bot-info-value">Lorenzo Bot #11</span>
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Аватар</span>
+                   <img src="assets/images/bot_avatar.jpg" alt="Аватар бота" class="step2-bot-avatar">
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Уровень бота</span>
+                   <span class="step2-bot-info-value">0</span>
+                 </div>
+               </div>
+
+               <div class="step2-bot-info-section">
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Бот для сделки</span>
+                   <span class="step2-bot-info-value">Lorenzo Bot #4</span>
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Аватар</span>
+                   <img src="assets/images/bot_avatar.jpg" alt="Аватар бота" class="step2-bot-avatar">
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Уровень бота</span>
+                   <span class="step2-bot-info-value">0</span>
+                 </div>
+               </div>
+
+               <div class="step2-bot-info-section">
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Бот для сделки</span>
+                   <span class="step2-bot-info-value">Lorenzo Bot #73</span>
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Аватар</span>
+                   <img src="assets/images/bot_avatar.jpg" alt="Аватар бота" class="step2-bot-avatar">
+                 </div>
+                 <div class="step2-bot-info-item">
+                   <span class="step2-bot-info-label">Уровень бота</span>
+                   <span class="step2-bot-info-value">0</span>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/checkout.js"></script>
+  </body>
+</html>
