@@ -1,0 +1,2149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KEYS STORE - Обмен</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/skeleton.css" />
+    <link rel="stylesheet" href="assets/style/other-items.css" />
+    <link rel="stylesheet" href="assets/style/exchange.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+              <div class="tooltip">
+                <svg
+                  width="15"
+                  height="7"
+                  viewBox="0 0 15 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.8389 5.57031L8.12305 0.992188C7.54385 0.429849 6.59873 0.429849 6.01953 0.992188L1.30371 5.57031H12.8389Z"
+                    fill="#2A2A33"
+                    stroke="#2A2A33"
+                  />
+                </svg>
+                Вы можете изменить настройки валюты здесь
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <div class="logo">
+            <div class="logo-icons">
+              <img src="/assets/images/logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <img src="/assets/images/search.svg" alt="" class="search-icon" />
+            <input
+              type="text"
+              placeholder="Искать в магазине..."
+              class="search-input search"
+              id="headerSearchInput"
+            />
+            <span class="search-enter-btn">ENTER</span>
+            <div class="search-overlay" id="searchOverlay"></div>
+            <div class="search-dropdown" id="searchDropdown">
+              <div class="search-dropdown-filters">
+                <svg
+                  width="33"
+                  height="22"
+                  viewBox="0 0 33 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.3"
+                    d="M1.5 1.5V8.5C1.5 15.1274 6.87258 20.5 13.5 20.5H31.5"
+                    stroke="#71717D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <button class="search-filter-btn active">Везде</button>
+                <button class="search-filter-btn">Игры Steam</button>
+                <button class="search-filter-btn">Игры PS</button>
+                <button class="search-filter-btn">Онлайн-сервисы</button>
+              </div>
+
+              <div class="search-dropdown-results">
+                <div class="search-results-section">
+                  <h3 class="search-results-title">ИГРЫ</h3>
+                  <div class="search-results-separator"></div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Deep Rock Galactic</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Path of Exile 2</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Arma Reforger</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name"
+                      >Lost Eidolons: Veil of the Witch</span
+                    >
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-results-section">
+                  <h3 class="search-results-title">ОНЛАЙН СЕРВИСЫ</h3>
+                  <div class="search-results-separator"></div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Пополнение Steam</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Подписка NETFLIX</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name"
+                      >Подписка PlayStation Plus</span
+                    >
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                  <div class="search-result-item">
+                    <span class="search-result-name">Gamepass</span>
+                    <div class="search-result-tags">
+                      <span class="search-result-tag">Steam</span>
+                      <span class="search-result-tag">PlayStation</span>
+                      <span class="search-result-tag">Ещё 5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <div class="action-item">
+              <div class="cart-wrapper">
+                <img src="/assets/images/cart.svg" alt="" class="action-icon" />
+                <span class="cart-count">3</span>
+              </div>
+              <span class="action-text">Корзина</span>
+            </div>
+            <div class="action-item profile-dropdown">
+              <div class="profile-trigger">
+                <img
+                  src="/assets/images/login.svg"
+                  alt=""
+                  class="action-icon"
+                />
+                <span class="action-text">waveneasymynic...</span>
+              </div>
+              <div class="profile-dropdown-menu">
+                <div class="profile-info">
+                  <div class="profile-avatar">
+                    <img src="/assets/images/user.png" alt="" />
+                  </div>
+                  <div class="profile-details">
+                    <div class="profile-username">waveneasymynic...</div>
+                    <div class="profile-balance">9 883 ₽</div>
+                  </div>
+                </div>
+                <div class="profile-actions">
+                  <a href="#" class="profile-action">
+                    <span>Профиль в Steam</span>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.5 9.5L9.5 2.5M9.5 2.5H3.5M9.5 2.5V8.5"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="profile-action">
+                    <span>Выйти из профиля</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <a href="#" class="nav-link">Игры Steam</a>
+          <a href="#" class="nav-link">Игры Playstation</a>
+          <a href="#" class="nav-link">Пополнение баланса Steam</a>
+          <a href="#" class="nav-link">Подписка Playstation Plus</a>
+          <div class="nav-link dropdown">
+            <a href="#" class="dropdown-trigger">
+              Маркет скинов
+              <svg
+                width="11"
+                height="7"
+                viewBox="0 0 11 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.40599 1.05L5.49399 4.95001L1.59399 1.05"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">CS2 Скины</a>
+              <a href="#" class="dropdown-item">Dota 2 Скины</a>
+              <a href="#" class="dropdown-item">Rust Скины</a>
+              <a href="#" class="dropdown-item">TF2 Скины</a>
+              <a href="#" class="dropdown-item">Все скины</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <div class="container">
+        <div class="mobile-nav-item" id="mobileSearchItem">
+          <img src="/assets/images/search.svg" alt="" class="mobile-nav-icon" />
+          <span class="mobile-nav-text">Поиск</span>
+        </div>
+        <div class="mobile-nav-item">
+          <div class="cart-wrapper">
+            <img src="/assets/images/cart.svg" alt="" class="mobile-nav-icon" />
+            <span class="cart-count">3</span>
+          </div>
+          <span class="mobile-nav-text">Корзина</span>
+        </div>
+        <div class="mobile-nav-item mobile-profile-dropdown">
+          <div class="mobile-profile-trigger">
+            <img
+              src="/assets/images/login.svg"
+              alt=""
+              class="mobile-nav-icon"
+            />
+            <span class="mobile-nav-text">Войти</span>
+          </div>
+          <div class="mobile-profile-dropdown-menu">
+            <div class="mobile-profile-info">
+              <div class="mobile-profile-avatar">
+                <img src="/assets/images/user.png" alt="" />
+              </div>
+              <div class="mobile-profile-details">
+                <div class="mobile-profile-username">waveneasymynic...</div>
+                <div class="mobile-profile-balance">9 883 ₽</div>
+              </div>
+            </div>
+            <div class="mobile-profile-actions">
+              <a href="#" class="mobile-profile-action">
+                <span>Профиль в Steam</span>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 9.5L9.5 2.5M9.5 2.5H3.5M9.5 2.5V8.5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="mobile-profile-action">
+                <span>Выйти из профиля</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-item">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mobile-nav-icon"
+          >
+            <path
+              d="M3 6H21M3 12H21M3 18H21"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="mobile-nav-text">Меню</span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="skeleton-page">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html" class="breadcrumb-link">Главная</a>
+          <span class="breadcrumb-separator"
+            ><svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.70007 1.396L5.30007 4.004L2.70007 6.604"
+                stroke="white"
+              /></svg          ></span>
+          <span class="breadcrumb-current">Обмен</span>
+        </div>
+
+        <div class="skeleton-content">
+          <div class="skin-market-section">
+            <button class="buy-skins-btn">
+              <span>Купить скины</span>
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_3060_12241)">
+                  <path
+                    d="M8.13735 10.14L8.13736 9.33557C8.13736 9.08008 8.08633 8.86572 7.98562 8.69873C7.84671 8.46826 7.61868 8.33618 7.35977 8.33618C7.10611 8.33618 6.85403 8.45972 6.61062 8.70312L3.95364 11.3601C3.37027 11.9435 3.37027 12.8927 3.95364 13.4761L6.61062 16.1331C6.85403 16.3766 7.1061 16.5 7.35977 16.5C7.74685 16.5 8.13735 16.1909 8.13735 15.5006L8.13735 14.77C11.9096 14.5472 15.0324 11.6523 15.4965 7.86218C15.5225 7.65051 15.4021 7.44788 15.2038 7.36938C15.1476 7.34717 15.0891 7.33643 15.0314 7.33643C14.8852 7.33643 14.7433 7.40491 14.653 7.52832C13.4081 9.22925 11.4093 10.2448 9.3063 10.2448C8.91665 10.2448 8.52481 10.2096 8.13735 10.14Z"
+                    fill="#A4F40F"
+                  />
+                  <path
+                    d="M1.80459 9.63061C2.00296 9.70923 2.22927 9.6438 2.35537 9.47156C3.60012 7.77075 5.5989 6.75525 7.70193 6.75525C8.09158 6.75525 8.48343 6.7904 8.87088 6.85998L8.87088 7.66443C8.87088 8.35474 9.2615 8.66382 9.64846 8.66382C9.90213 8.66382 10.1542 8.54028 10.3977 8.29675L13.0547 5.63989C13.638 5.05652 13.638 4.1073 13.0546 3.5238L10.3977 0.866943C10.1542 0.623413 9.90213 0.5 9.64846 0.499999C9.2615 0.499999 8.87088 0.809081 8.87088 1.49939L8.87088 2.22998C5.09854 2.45276 1.97586 5.34766 1.51175 9.13769C1.48574 9.34949 1.60611 9.55212 1.80459 9.63061Z"
+                    fill="#A4F40F"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3060_12241">
+                    <rect
+                      width="16"
+                      height="16"
+                      fill="white"
+                      transform="translate(16.5 16.5) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+
+            <div class="games-selection">
+              <div class="game-item active">
+                <div class="game-icon-frame">
+                  <img src="/assets/images/game_icon_1.svg" alt="CS2" />
+                  <div class="check-badge">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3060_10955)">
+                        <path
+                          d="M21.5 12V21L21.2812 20.6718C20.1684 19.0026 18.295 18 16.2889 18H11.5C7.08172 18 3.5 14.4183 3.5 10V5.07107C3.5 3.74499 2.97321 2.47321 2.03553 1.53553L0.5 0H9.5C16.1274 0 21.5 5.37258 21.5 12Z"
+                          fill="#2881FF"
+                        />
+                        <path
+                          d="M16.6998 6L10.7917 12L8.2998 9.46154"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3060_10955">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-icon-frame">
+                  <img src="/assets/images/game_icon_2.svg" alt="Dota 2" />
+                  <div class="check-badge">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3060_10955)">
+                        <path
+                          d="M21.5 12V21L21.2812 20.6718C20.1684 19.0026 18.295 18 16.2889 18H11.5C7.08172 18 3.5 14.4183 3.5 10V5.07107C3.5 3.74499 2.97321 2.47321 2.03553 1.53553L0.5 0H9.5C16.1274 0 21.5 5.37258 21.5 12Z"
+                          fill="#2881FF"
+                        />
+                        <path
+                          d="M16.6998 6L10.7917 12L8.2998 9.46154"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3060_10955">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-icon-frame">
+                  <img
+                    src="/assets/images/game_icon_3.svg"
+                    alt="Team Fortress 2"
+                  />
+                  <div class="check-badge">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3060_10955)">
+                        <path
+                          d="M21.5 12V21L21.2812 20.6718C20.1684 19.0026 18.295 18 16.2889 18H11.5C7.08172 18 3.5 14.4183 3.5 10V5.07107C3.5 3.74499 2.97321 2.47321 2.03553 1.53553L0.5 0H9.5C16.1274 0 21.5 5.37258 21.5 12Z"
+                          fill="#2881FF"
+                        />
+                        <path
+                          d="M16.6998 6L10.7917 12L8.2998 9.46154"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3060_10955">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-icon-frame">
+                  <img src="/assets/images/game_icon_4.svg" alt="PUBG" />
+                  <div class="check-badge">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3060_10955)">
+                        <path
+                          d="M21.5 12V21L21.2812 20.6718C20.1684 19.0026 18.295 18 16.2889 18H11.5C7.08172 18 3.5 14.4183 3.5 10V5.07107C3.5 3.74499 2.97321 2.47321 2.03553 1.53553L0.5 0H9.5C16.1274 0 21.5 5.37258 21.5 12Z"
+                          fill="#2881FF"
+                        />
+                        <path
+                          d="M16.6998 6L10.7917 12L8.2998 9.46154"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3060_10955">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-icon-frame">
+                  <img src="/assets/images/game_icon_5.svg" alt="Rust" />
+                  <div class="check-badge">
+                    <svg
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3060_10955)">
+                        <path
+                          d="M21.5 12V21L21.2812 20.6718C20.1684 19.0026 18.295 18 16.2889 18H11.5C7.08172 18 3.5 14.4183 3.5 10V5.07107C3.5 3.74499 2.97321 2.47321 2.03553 1.53553L0.5 0H9.5C16.1274 0 21.5 5.37258 21.5 12Z"
+                          fill="#2881FF"
+                        />
+                        <path
+                          d="M16.6998 6L10.7917 12L8.2998 9.46154"
+                          stroke="white"
+                          stroke-width="2"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3060_10955">
+                          <rect
+                            width="21"
+                            height="21"
+                            fill="white"
+                            transform="translate(0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="left-column">
+            <div class="exchange-link-section">
+              <h3 class="section-title">
+                Вставьте <span>ссылку</span> на обмен
+              </h3>
+              <div class="link-input-container">
+                <div class="link-input">
+                  <input
+                    type="text"
+                    placeholder="https://steamcommunity.com/tradeoffer/new/?partner=8761198&token=dlSgASJ9"
+                  />
+                </div>
+                <button class="refresh-btn">
+                  <img src="/assets/images/refresh-icon.svg" alt="Refresh" />
+                </button>
+              </div>
+            </div>
+
+            <div class="controls-section">
+              <div class="skeleton-sort-dropdown" id="skeletonSortDropdown">
+                <div class="skeleton-dropdown-content">
+                  <div class="skeleton-sort-icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.3">
+                        <path
+                          d="M2.3999 5.59961L13.5999 5.60742"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.3999 10.4004L13.5999 10.4004"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="square"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="skeleton-dropdown-text">По умолчанию</span>
+                </div>
+                <div class="skeleton-dropdown-arrow">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.90624 4.05078L5.99424 7.95078L2.09424 4.05078"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+
+                <div class="skeleton-dropdown-menu" id="skeletonDropdownMenu">
+                  <div class="skeleton-dropdown-item active">
+                    <div class="skeleton-item-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.4 5.6H13.6M2.4 10.4H13.6"
+                          stroke="#2881FF"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </div>
+                    <span class="skeleton-item-text">По умолчанию</span>
+                  </div>
+
+                  <div class="skeleton-dropdown-item">
+                    <div class="skeleton-item-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.4 4.8H13.6M2.4 9.6H13.6"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-opacity="0.3"
+                        />
+                      </svg>
+                    </div>
+                    <span class="skeleton-item-text">Сначала дороже</span>
+                  </div>
+
+                  <div class="skeleton-dropdown-item">
+                    <div class="skeleton-item-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.4 4.8H13.6M2.4 9.6H13.6"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-opacity="0.3"
+                        />
+                      </svg>
+                    </div>
+                    <span class="skeleton-item-text">Сначала дешевле</span>
+                  </div>
+
+                  <div class="skeleton-dropdown-item">
+                    <div class="skeleton-item-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.4 4.8H13.6M2.4 9.6H13.6"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-opacity="0.3"
+                        />
+                      </svg>
+                    </div>
+                    <span class="skeleton-item-text">Float больше</span>
+                  </div>
+
+                  <div class="skeleton-dropdown-item">
+                    <div class="skeleton-item-icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.4 4.8H13.6M2.4 9.6H13.6"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-opacity="0.3"
+                        />
+                      </svg>
+                    </div>
+                    <span class="skeleton-item-text">Float меньше</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search-input">
+                <input type="text" placeholder="Быстрый поиск" />
+                <div class="search-icon">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.5" clip-path="url(#clip0_3062_11285)">
+                      <path
+                        d="M6.59998 9.8596C4.13675 9.8596 2.13991 7.86276 2.13991 5.39953C2.13991 2.9363 4.13675 0.939453 6.59998 0.939453C9.06322 0.939453 11.0601 2.9363 11.0601 5.39953C11.0601 7.86276 9.06322 9.8596 6.59998 9.8596Z"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M0.955178 11.0453L3.31689 8.68359"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="square"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3062_11285">
+                        <rect
+                          width="12"
+                          height="12"
+                          fill="white"
+                          transform="matrix(-1 0 0 1 12 0)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="filters-btn">
+                <div class="filters-content">
+                  <span class="filters-text">Фильтры</span>
+                  <div class="filters-count">6</div>
+                </div>
+                <div class="filters-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.668 3.334H17.501M2.5 3.334H8.333M10 10H17.5M2.5 10H7.5M13.332 16.666H17.5M2.5 16.666H10M11.668 1.666V5.001M6.668 8.334V11.669M13.332 15V18.335"
+                      stroke="#71717D"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skeleton-items-section">
+              <div class="skeleton-items-grid">
+                <div class="skeleton-row">
+                    <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="skeleton-row">
+                    <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="skeleton-row">
+                    <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="skeleton-row">
+                    <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="other-item-card other-item-industrial">
+                        <div class="other-item-glow"></div>
+                        <div class="other-item-content">
+                          <div class="other-item-info">
+                            <div class="other-item-rarity-section">
+                              <div class="other-item-rarity-indicator"></div>
+                              <div class="other-item-stats">
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-label">ST</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">FN</span>
+                                  <span class="other-item-stat-separator">/</span>
+                                </div>
+                                <div class="other-item-stat">
+                                  <span class="other-item-stat-value">0.055821</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="other-item-quantity">x212</div>
+                          </div>
+                          <div class="other-item-image-container">
+                            <img src="/assets/images/skin_item_4.jpg" alt="M4A1-S Black Lotus" class="other-item-image">
+                            <div class="other-item-stickers">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                              <img src="/assets/images/cs2-sticker-1.jpg" alt="Sticker" class="other-item-sticker">
+                            </div>
+                          </div>
+                          <div class="other-item-description">
+                            <h3 class="other-item-title">M4A1-S | Black Lotus (Minimal Wear)</h3>
+                            <div class="other-item-price-section">
+                              <div class="other-item-price-info">
+                                <span class="other-item-price">902.74 ₽</span>
+                                <span class="other-item-discount">-15%</span>
+                              </div>
+                              <div class="other-item-status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M8 1V3M8 13V15M15 8H13M3 8H1M13.364 2.636L11.95 4.05M4.05 11.95L2.636 13.364M13.364 13.364L11.95 11.95M4.05 4.05L2.636 2.636" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                  <circle cx="8" cy="8" r="3" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="other-item-add-btn overstock">
+                            <img src="/assets/images/not-buy-icon.svg" alt="Not buy" class="other-item-btn-icon">
+                            <span class="other-item-add-btn-text">Оверсток</span>
+                          </button>
+                        </div>
+                      </div>
+
+                </div>
+
+          
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="exchange-right-content">
+              <div class="exchange-notification">
+                <div class="exchange-notification-content">
+                  <p class="exchange-notification-text">
+                    В связи с обновлением политики обменов Steam, для некоторых предметов (включая CS2) введена возможность отмены обмена в течение 7 дней после его совершения.
+                    В целях безопасности всех участников сделки, выплаты за такие предметы будут производиться только после завершения этого периода и окончательного подтверждения обмена.
+                  </p>
+                  <button class="exchange-notification-close">
+                    <img src="assets/images/cross_icon.svg" alt="Закрыть" class="exchange-close-icon">
+                  </button>
+                  <div class="exchange-notification-collapse">
+                    <span class="exchange-collapse-text">Свернуть</span>
+                    <img src="assets/images/chevron_down.svg" alt="Свернуть" class="exchange-chevron-icon">
+                  </div>
+                </div>
+              </div>
+
+              <div class="exchange-order-summary">
+                <div class="exchange-order-header">
+                  <h3 class="exchange-order-title">Ваш заказ</h3>
+                </div>
+                <div class="exchange-order-details">
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Выбрано предметов</span>
+                    <span class="exchange-order-value">13</span>
+                  </div>
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Комиссия провайдера</span>
+                    <span class="exchange-order-value">30 ₽</span>
+                  </div>
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Расходы провайдера на конвертацию</span>
+                    <span class="exchange-order-value">8.9 ₽</span>
+                  </div>
+                </div>
+                <div class="exchange-order-total">
+                  <span class="exchange-total-label">Выплата</span>
+                  <div class="exchange-total-amount">
+                    <span class="exchange-total-value">11 138.90 ₽</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exchange-payment-methods">
+                <div class="exchange-payment-tabs">
+                  <div class="exchange-tab exchange-tab-active">
+                    <span class="exchange-tab-text">Рублями</span>
+                  </div>
+                  <div class="exchange-tab">
+                    <span class="exchange-tab-text">Криптой</span>
+                  </div>
+                </div>
+                <div class="exchange-payment-options">
+                  <div class="exchange-payment-row">
+                    <div class="exchange-payment-method exchange-payment-selected">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/spb_logo.svg" alt="СПБ" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3062_26340)">
+                                <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                                <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3062_26340">
+                                <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Без комиссии</span>
+                    </div>
+                    <div class="exchange-payment-method exchange-payment-hover">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_2)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_2">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Комиссия PayPal составляет 3% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-payment-method exchange-payment-disabled">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Минимальная сумма сделки для PayPal — 200 RUB</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exchange-payment-row">
+                    <div class="exchange-payment-method">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_3)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_3">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Комиссия PayPal составляет 3% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-payment-method">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/spb_logo.svg" alt="СПБ" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_4)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_4">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Комиссия СПБ составляет 3% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-payment-method exchange-payment-disabled">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/spb_logo.svg" alt="СПБ" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_5)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_5">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                    </div>
+                  </div>
+                  <div class="exchange-payment-row">
+                    <div class="exchange-payment-method">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/spb_logo.svg" alt="СПБ" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_6)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_6">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 333%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Высокая комиссия СПБ - 333% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-payment-method">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_7)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_7">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Комиссия PayPal составляет 3% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="exchange-continue-btn">
+                  <span class="exchange-btn-text">Продолжить</span>
+                </button>
+                <p class="exchange-minimum-text">Минимальная сумма сделки 82.00 ₽</p>
+              </div>
+            </div>
+
+            <p class="exchange-agreement-text">
+              Нажимая на кнопку, вы соглашаетесь с Правилами покупки, а также с Политикой конфиденциальности
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/skeleton.js"></script>
+    <script src="assets/scripts/exchange.js"></script>
+  </body>
+</html>

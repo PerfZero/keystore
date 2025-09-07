@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KEYS STORE - Обмен</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/skeleton.css" />
+    <link rel="stylesheet" href="assets/style/other-items.css" />
+    <link rel="stylesheet" href="assets/style/exchange.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <a href="#" class="header-link">О компании</a>
+            <a href="#" class="header-link">Поддержка</a>
+          </div>
+          <div class="header-top-center">
+            <a href="#" class="mobile-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <button class="currency-btn">
+              RUB / TRN
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+              <div class="tooltip">
+                <span>Выберите валюту</span>
+              </div>
+            </button>
+            <button class="language-btn">
+              <img src="/assets/images/flag-tr.svg" alt="TR" />
+              <svg
+                width="4"
+                height="7"
+                viewBox="0 0 4 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.700012 0.895996L3.30001 3.504L0.700012 6.104"
+                  stroke="#A4F40F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <div class="header-main-content">
+            <a href="/" class="header-logo">
+              <img src="/assets/images/logo.svg" alt="KEYS STORE" />
+            </a>
+            <nav class="header-nav">
+              <a href="/" class="header-nav-link">Главная</a>
+              <a href="/catalog.html" class="header-nav-link">Каталог</a>
+              <a href="/exchange.html" class="header-nav-link active">Обмен</a>
+              <a href="/sell-items.html" class="header-nav-link">Продать</a>
+            </nav>
+            <div class="header-actions">
+              <button class="search-btn">
+                <img src="/assets/images/search.svg" alt="Поиск" />
+              </button>
+              <button class="cart-btn">
+                <img src="/assets/images/cart.svg" alt="Корзина" />
+                <span class="cart-count">0</span>
+              </button>
+              <button class="user-btn">
+                <img src="/assets/images/user.png" alt="Пользователь" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="exchange-layout">
+          <div class="left-column">
+            <div class="exchange-login-card">
+              <div class="exchange-login-content">
+                <div class="exchange-steam-logo">
+                  <img src="assets/images/steam_logo.svg" alt="Steam" class="steam-logo-img">
+                </div>
+                <div class="exchange-login-text">
+                  <h2 class="exchange-login-title">Авторизуйтесь через Steam</h2>
+                  <p class="exchange-login-description">Для того, чтобы обменять вещи на деньги.</p>
+                </div>
+                <button class="exchange-steam-btn">
+                  <img src="assets/images/steam_logo.svg" alt="Steam" class="steam-btn-icon">
+                  <span class="steam-btn-text">Войти через Steam</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="exchange-right-content">
+              <div class="exchange-notification">
+                <div class="exchange-notification-content">
+                  <p class="exchange-notification-text">
+                    В связи с обновлением политики обменов Steam, для некоторых предметов (включая CS2) введена возможность отмены обмена в течение 7 дней после его совершения.
+                    В целях безопасности всех участников сделки, выплаты за такие предметы будут производиться только после завершения этого периода и окончательного подтверждения обмена.
+                  </p>
+                  <button class="exchange-notification-close">
+                    <img src="assets/images/cross_icon.svg" alt="Закрыть" class="exchange-close-icon">
+                  </button>
+                  <div class="exchange-notification-collapse">
+                    <span class="exchange-collapse-text">Свернуть</span>
+                    <img src="assets/images/chevron_down.svg" alt="Свернуть" class="exchange-chevron-icon">
+                  </div>
+                </div>
+              </div>
+
+              <div class="exchange-order-summary">
+                <div class="exchange-order-header">
+                  <h3 class="exchange-order-title">Ваш заказ</h3>
+                </div>
+                <div class="exchange-order-details">
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Выбрано предметов</span>
+                    <span class="exchange-order-value">13</span>
+                  </div>
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Комиссия провайдера</span>
+                    <span class="exchange-order-value">30 ₽</span>
+                  </div>
+                  <div class="exchange-order-row">
+                    <span class="exchange-order-label">Расходы провайдера на конвертацию</span>
+                    <span class="exchange-order-value">8.9 ₽</span>
+                  </div>
+                </div>
+                <div class="exchange-order-total">
+                  <span class="exchange-total-label">Выплата</span>
+                  <div class="exchange-total-amount">
+                    <span class="exchange-total-value">11 138.90 ₽</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exchange-payment-methods">
+                <div class="exchange-payment-tabs">
+                  <div class="exchange-tab exchange-tab-active">
+                    <span class="exchange-tab-text">Рублями</span>
+                  </div>
+                  <div class="exchange-tab">
+                    <span class="exchange-tab-text">Криптой</span>
+                  </div>
+                </div>
+                <div class="exchange-payment-options">
+                  <div class="exchange-payment-row">
+                    <div class="exchange-payment-method exchange-payment-selected">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/spb_logo.svg" alt="СПБ" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Без комиссии</span>
+                    </div>
+                    <div class="exchange-payment-method exchange-payment-hover">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <div class="exchange-payment-check">
+                        <div class="exchange-check-badge">
+                          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3062_26340_2)">
+                            <path d="M21 12V21L20.7812 20.6718C19.6684 19.0026 17.795 18 15.7889 18H11C6.58172 18 3 14.4183 3 10V5.07107C3 3.74499 2.47321 2.47321 1.53553 1.53553L0 0H9C15.6274 0 21 5.37258 21 12Z" fill="#0F50F4"/>
+                            <path d="M16.2 6L10.2919 12L7.79999 9.46154" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3062_26340_2">
+                            <rect width="21" height="21" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Комиссия PayPal составляет 3% от суммы сделки</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-payment-method exchange-payment-disabled">
+                      <div class="exchange-payment-logo">
+                        <img src="assets/images/paypal_logo.svg" alt="PayPal" class="exchange-logo-img">
+                      </div>
+                      <span class="exchange-commission-text">Комиссия 3%</span>
+                      <div class="exchange-payment-tooltip">
+                        <div class="exchange-tooltip-content">
+                          <span class="exchange-tooltip-text">Минимальная сумма сделки для PayPal — 200 RUB</span>
+                          <div class="exchange-tooltip-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="exchange-continue-btn">
+                  <span class="exchange-btn-text">Продолжить</span>
+                </button>
+                <p class="exchange-minimum-text">Минимальная сумма сделки 82.00 ₽</p>
+              </div>
+            </div>
+
+            <p class="exchange-agreement-text">
+              Нажимая на кнопку, вы соглашаетесь с Правилами покупки, а также с Политикой конфиденциальности
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/skeleton.js"></script>
+    <script src="assets/scripts/exchange.js"></script>
+  </body>
+</html>

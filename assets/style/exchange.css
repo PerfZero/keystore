@@ -1,0 +1,477 @@
+.exchange-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 418px;
+}
+
+.exchange-notification {
+  background: rgba(250, 223, 92, 0.04);
+  border: 1px solid rgba(244, 229, 15, 0.2);
+  border-radius: 12px;
+  padding: 12px 24px;
+  position: relative;
+}
+
+.exchange-notification-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.exchange-notification-text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: #F4E50F;
+  margin: 0;
+}
+
+.exchange-notification-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 0;
+
+}
+
+.exchange-close-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.exchange-notification-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(244, 229, 15, 0.05);
+  border-radius: 12px;
+  padding: 4px 0;
+  width: 100%;
+}
+
+.exchange-collapse-text {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #F4E50F;
+}
+
+.exchange-chevron-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.exchange-order-summary {
+  background: #1A1A1F;
+  border: 1px solid #222229;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exchange-order-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.exchange-order-title {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.exchange-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exchange-order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.exchange-order-label {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.exchange-order-value {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.exchange-order-total {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #2A2A33;
+}
+
+.exchange-total-label {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.exchange-total-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.exchange-total-value {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.exchange-payment-methods {
+  background: #1A1A1F;
+  border: 1px solid #222229;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exchange-payment-tabs {
+  display: flex;
+  border-bottom: 1px solid #2A2A33;
+  margin-bottom: 16px;
+}
+
+.exchange-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 32px;
+  height: 46px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.exchange-tab-active {
+    background: radial-gradient(50% 100% at 50% 110%, #0f50f454 0%, rgba(15, 80, 244, 0) 100%);
+    border-bottom: 2px solid #0F50F4;
+}
+
+.exchange-tab-text {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0F50F4;
+}
+
+.exchange-tab:not(.exchange-tab-active) .exchange-tab-text {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.exchange-payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exchange-payment-row {
+  display: flex;
+  gap: 4px;
+}
+
+.exchange-payment-method {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 12px;
+  border: 1px solid #3D3D4A;
+  border-radius: 16px;
+  width: 126px;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.exchange-payment-method:hover:not(.exchange-payment-disabled) {
+  background: #222229;
+}
+
+.exchange-payment-selected {
+  background: #373766;
+  border: 2px solid #0F50F4;
+}
+
+.exchange-payment-hover {
+  background: #222229;
+}
+
+.exchange-payment-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.exchange-payment-logo {
+  width: 82px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.exchange-payment-check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.exchange-payment-selected .exchange-payment-check {
+  opacity: 1;
+}
+
+.exchange-check-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-check-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.exchange-commission-text {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #A4F40F;
+}
+
+.exchange-payment-hover .exchange-commission-text,
+.exchange-payment-method:not(.exchange-payment-selected):not(.exchange-payment-disabled) .exchange-commission-text {
+  color: #F4E50F;
+}
+
+.exchange-payment-disabled .exchange-commission-text {
+  color: #F4E50F;
+  opacity: 0.2;
+}
+
+.exchange-payment-tooltip {
+  position: relative;
+  display: none;
+}
+
+.exchange-tooltip-content {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+  background: #222229;
+  border: 1px solid #2A2A33;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0px 4px 9px 0px rgba(18, 18, 18, 0.24);
+  z-index: 10;
+}
+
+.exchange-payment-tooltip.show {
+  display: block;
+}
+
+.exchange-tooltip-text {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #878796;
+}
+
+.exchange-tooltip-arrow {
+  position: absolute;
+  top: -5px;
+  left: 98px;
+  width: 14px;
+  height: 6px;
+  background: #2A2A33;
+  border-left: 1px solid #2A2A33;
+  border-right: 1px solid #2A2A33;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.exchange-continue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 60px;
+  background: #0F50F4;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+}
+
+.exchange-btn-text {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.exchange-minimum-text {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FF1D0D;
+  margin: 8px 0 0 0;
+}
+
+.exchange-agreement-text {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin: 8px 0 0 0;
+}
+
+.exchange-login-card {
+  background: #1A1A1F;
+  border: 1px solid #222229;
+  border-radius: 12px;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 966px;
+  height: 520px;
+}
+
+.exchange-login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.exchange-steam-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.steam-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.exchange-login-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.exchange-login-title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.exchange-login-description {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #878796;
+  margin: 0;
+}
+
+.exchange-steam-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 32px;
+  background: #0F50F4;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 204px;
+  height: 48px;
+}
+
+.steam-btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.steam-btn-text {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
